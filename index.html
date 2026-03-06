@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende a Fijar Precios de los Alimentos - Ebook Digital</title>
+    <meta name="description" content="Aprende a calcular el precio correcto de tus platos y empieza a ganar dinero real con tu negocio de comida. Guía práctica para emprendedores gastronómicos.">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1646156149348746');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1646156149348746&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 0.8s ease;
+        }
+        
+        .hero h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+        
+        .ebook-image {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            margin: 40px auto;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #27ae60, #2ecc71);
+            color: white;
+            padding: 20px 50px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(46, 204, 113, 0.4);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease 0.6s both;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(46, 204, 113, 0.5);
+        }
+        
+        .button-subtext {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            animation: fadeInUp 0.8s ease 0.8s both;
+        }
+        
+        .credibility-text {
+            margin-top: 30px;
+            font-size: 1rem;
+            opacity: 0.85;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 0.8s ease 1s both;
+        }
+        
+        /* Problem Section */
+        .problem {
+            background: white;
+            padding: 80px 0;
+        }
+        
+        .problem h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+        
+        .problem-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .problem-points {
+            margin: 40px 0;
+        }
+        
+        .problem-point {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #27ae60;
+            border-radius: 5px;
+        }
+        
+        .problem-point h3 {
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+        
+        /* Solution Section */
+        .solution {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 80px 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .solution h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        
+        .solution-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .benefit {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .benefit h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        
+        /* Bonus Section */
+        .bonus {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .bonus h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .bonus-badge {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            transform: rotate(-2deg);
+        }
+        
+        .bonus-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .bonus-image {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            margin: 30px auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+        
+        .testimonials h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2c3e50;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .testimonial-role {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .final-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .price-highlight {
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 30px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer p {
+            opacity: 0.8;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.2rem;
+            }
+            
+            .cta-button {
+                padding: 15px 40px;
+                font-size: 1.2rem;
+            }
+            
+            .price-highlight {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>¿Estás perdiendo dinero vendiendo comida sin darte cuenta?</h1>
+            <h2>Aprende a calcular el precio correcto de tus platos y empieza a ganar dinero real con tu negocio de comida.</h2>
+            
+            <img src="imagenes/portada 1.png" alt="Aprende a Fijar Precios de los Alimentos" class="ebook-image">
+            
+            <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10&bid=1772795477141" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">
+                ACCEDER AHORA POR $11.99
+            </a>
+            
+            <div class="button-subtext">
+                Acceso inmediato • Pago seguro
+            </div>
+            
+            <div class="credibility-text">
+                Guía práctica para emprendedores de comida, cocineros y dueños de pequeños negocios gastronómicos.
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h2>El error que está arruinando las ganancias de muchos negocios de comida</h2>
+            
+            <div class="problem-content">
+                <p>Cada día, miles de emprendedores gastronómicos cometen el mismo error fatal: venden sus deliciosos platos sin saber si realmente están ganando dinero.</p>
+                
+                <div class="problem-points">
+                    <div class="problem-point">
+                        <h3>❌ Costos ocultos que ignoras</h3>
+                        <p>No solo es el precio de los ingredientes. Hay electricidad, gas, empaques, tu tiempo, y mucho más que no estás calculando.</p>
+                    </div>
+                    
+                    <div class="problem-point">
+                        <h3>❌ Precios por intuición, no por cálculo</h3>
+                        <p>Pones precios "que parecen justos" sin saber si cubren todos tus costos y te dejan una ganancia real.</p>
+                    </div>
+                    
+                    <div class="problem-point">
+                        <h3>❌ Competencia que te gana por estrategia</h3>
+                        <p>Mientras tú vendes por instinto, tus competidores usan fórmulas precisas y dominan el mercado.</p>
+                    </div>
+                    
+                    <div class="problem-point">
+                        <h3>❌ Agotamiento sin recompensa</h3>
+                        <p>Trabajas horas extras, haces comida increíble, pero al final del mes... ¿dónde quedó el dinero?</p>
+                    </div>
+                </div>
+                
+                <p><strong>La verdad es que sin una estrategia de precios correcta, estás trabajando para perder dinero, sin importar qué tan deliciosa sea tu comida.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <div class="container">
+            <h2>La solución definitiva para tus precios</h2>
+            
+            <div class="solution-content">
+                <p>"Aprende a Fijar Precios de los Alimentos" no es otro curso teórico. Es una guía práctica, paso a paso, que te enseñará exactamente cómo calcular precios que te hagan ganar dinero real.</p>
+                
+                <div class="benefits">
+                    <div class="benefit">
+                        <h3>📊 Fórmulas probadas</h3>
+                        <p>Sistema exacto para calcular costos reales y fijar precios rentables</p>
+                    </div>
+                    
+                    <div class="benefit">
+                        <h3>💰 Maximiza ganancias</h3>
+                        <p>Aprende a identificar oportunidades de aumento de precios sin perder clientes</p>
+                    </div>
+                    
+                    <div class="benefit">
+                        <h3>⏰ Ahorra tiempo</h3>
+                        <p>Plantillas listas para usar que te ahorran horas de cálculos</p>
+                    </div>
+                    
+                    <div class="benefit">
+                        <h3>🎯 Precisión exacta</h3>
+                        <p>Nunca más tendrás dudas si estás ganando o perdiendo dinero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Section -->
+    <section class="bonus">
+        <div class="container">
+            <h2>BONO EXCLUSIVO GRATIS</h2>
+            <div class="bonus-badge">SOLO POR TIEMPO LIMITADO</div>
+            
+            <div class="bonus-content">
+                <h3 style="font-size: 1.8rem; margin-bottom: 20px;">"Escalando de Negocio a Cocina"</h3>
+                <p>Además del ebook principal, recibirás este bono exclusivo donde aprenderás:</p>
+                
+                <ul style="text-align: left; max-width: 400px; margin: 30px auto;">
+                    <li>Cómo pasar de vender casero a tener un negocio formal</li>
+                    <li>Estrategias para aumentar tu producción sin perder calidad</li>
+                    <li>Sistemas para gestionar pedidos y clientes</li>
+                    <li>Marketing digital para negocios de comida</li>
+                </ul>
+                
+                <img src="imagenes/BONO.png" alt="Bono Escalando de Negocio a Cocina" class="bonus-image">
+                
+                <p><strong>Este bono solo está disponible para los primeros compradores. ¡No lo dejes pasar!</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Emprendedores como tú ya están transformando sus negocios</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "Antes vendía mis empanadas sin saber si ganaba algo. Ahora con las fórmulas del ebook, mis ganancias aumentaron un 40% y tengo control total de mis números."
+                    </div>
+                    <div class="testimonial-author">María González</div>
+                    <div class="testimonial-role">Vendedora de empanadas caseras</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "El mejor dinero que he invertido en mi negocio. Aprendí a calcular correctamente y por primera vez en 3 años, estoy ganando dinero de verdad."
+                    </div>
+                    <div class="testimonial-author">Carlos Rodríguez</div>
+                    <div class="testimonial-role">Chef de comida corrida</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "Las plantillas me ahorraron horas de trabajo. Ahora sé exactamente cuánto cobrar por cada plato y mis clientes siguen felices."
+                    </div>
+                    <div class="testimonial-author">Ana Martínez</div>
+                    <div class="testimonial-role">Pastelera y repostera</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>¿Estás listo para dejar de perder dinero y empezar a ganar?</h2>
+            <p>La decisión correcta puede cambiar completamente tu negocio. No dejes pasar más tiempo vendiendo sin saber si estás ganando.</p>
+            
+            <div class="price-highlight">
+                Solo $11.99 USD
+            </div>
+            
+            <p style="font-size: 1.1rem; margin-bottom: 30px;">
+                Menos de lo que ganas en UN solo plato correctamente calculado
+            </p>
+            
+            <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10&bid=1772795477141" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">
+                QUIERO EMPEZAR AHORA
+            </a>
+            
+            <div class="button-subtext" style="margin-top: 20px;">
+                Acceso inmediato • Garantía de satisfacción • Pago 100% seguro
+            </div>
+            
+            <p style="margin-top: 40px; font-size: 0.9rem; opacity: 0.8;">
+                Recuerda: también recibes el bono "Escalando de Negocio a Cocina" GRATIS
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Aprende a Fijar Precios de los Alimentos. Todos los derechos reservados.</p>
+            <p>Desarrollado con ❤️ para emprendedores gastronómicos</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for any anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
