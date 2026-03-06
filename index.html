@@ -50,6 +50,27 @@
             padding: 80px 0;
             text-align: center;
             color: white;
+            background-image: url('imagenes/portada 2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 2;
         }
         
         .hero h1 {
@@ -76,6 +97,7 @@
             width: 100%;
             height: auto;
             margin: 40px auto;
+            display: block;
             box-shadow: 0 20px 40px rgba(0,0,0,0.3);
             border-radius: 10px;
             animation: fadeInUp 0.8s ease 0.4s both;
@@ -265,6 +287,17 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background-size: cover;
+            background-position: center;
+            border: 3px solid #f0f0f0;
         }
         
         .testimonial-text {
@@ -364,7 +397,7 @@
             <h1>¿Estás perdiendo dinero vendiendo comida sin darte cuenta?</h1>
             <h2>Aprende a calcular el precio correcto de tus platos y empieza a ganar dinero real con tu negocio de comida.</h2>
             
-            <img src="imagenes/portada 1.png" alt="Aprende a Fijar Precios de los Alimentos" class="ebook-image">
+            <img src="imagenes/portada 3.webp" alt="Aprende a Fijar Precios de los Alimentos" class="ebook-image">
             
             <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10&bid=1772795477141" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">
                 ACCEDER AHORA POR $11.99
@@ -479,6 +512,7 @@
             
             <div class="testimonial-grid">
                 <div class="testimonial">
+                    <div class="testimonial-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/68.jpg');"></div>
                     <div class="testimonial-text">
                         "Antes vendía mis empanadas sin saber si ganaba algo. Ahora con las fórmulas del ebook, mis ganancias aumentaron un 40% y tengo control total de mis números."
                     </div>
@@ -487,6 +521,7 @@
                 </div>
                 
                 <div class="testimonial">
+                    <div class="testimonial-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/45.jpg');"></div>
                     <div class="testimonial-text">
                         "El mejor dinero que he invertido en mi negocio. Aprendí a calcular correctamente y por primera vez en 3 años, estoy ganando dinero de verdad."
                     </div>
@@ -495,6 +530,7 @@
                 </div>
                 
                 <div class="testimonial">
+                    <div class="testimonial-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/76.jpg');"></div>
                     <div class="testimonial-text">
                         "Las plantillas me ahorraron horas de trabajo. Ahora sé exactamente cuánto cobrar por cada plato y mis clientes siguen felices."
                     </div>
@@ -514,6 +550,8 @@
             <div class="price-highlight">
                 Solo $11.99 USD
             </div>
+            
+            <img src="imagenes/portada 1.png" alt="Aprende a Fijar Precios de los Alimentos" class="ebook-image" style="max-width: 300px; margin: 30px auto;">
             
             <p style="font-size: 1.1rem; margin-bottom: 30px;">
                 Menos de lo que ganas en UN solo plato correctamente calculado
