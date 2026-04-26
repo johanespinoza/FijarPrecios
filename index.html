@@ -1,477 +1,325 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprende a Fijar Precios de los Alimentos - Ebook Digital</title>
-    <meta name="description" content="Aprende a calcular el precio correcto de tus platos y empieza a ganar dinero real con tu negocio de comida. Guía práctica para emprendedores gastronómicos.">
+    <meta name="description" content="Aprende a fijar precios correctamente para tu negocio de alimentos y maximiza tus ganancias con nuestro ebook especializado.">
+    <meta name="facebook-domain-verification" content="yevtvqq9gsca0brtyu4f3akdjoln7b" />
+    <title>Aprende a Poner Precio a los Alimentos - Guía Definitiva</title>
     
     <!-- Meta Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1646156149348746');
-        fbq('track', 'PageView');
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1646156149348746');
+    fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1646156149348746&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=1646156149348746&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Imagenes/favicon.png">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload de imágenes críticas -->
+    <link rel="preload" as="image" href="Imagenes/hero-bg.jpg">
+    
+    <!-- Metaetiquetas para redes sociales -->
+    <meta property="og:title" content="Aprende a Poner Precio a los Alimentos - Guía Definitiva">
+    <meta property="og:description" content="Descubre estrategias comprobadas para fijar precios rentables en tu negocio de alimentos y maximiza tus ganancias.">
+    <meta property="og:image" content="https://tudominio.com/Imagenes/og-image.jpg">
+    <meta property="og:url" content="https://tudominio.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Estilos críticos en línea -->
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --primary: #2ecc71;
+            --primary-dark: #27ae60;
+            --secondary: #3498db;
+            --dark: #2c3e50;
+            --light: #f8f9fa;
+            --danger: #e74c3c;
+            --warning: #f39c12;
+            --success: #2ecc71;
+            --text: #2c3e50;
+            --text-light: #7f8c8d;
+            --border-radius: 12px;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            --transition: all 0.3s ease;
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #2c3e50;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
         }
         
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Hero Section */
-        .hero {
-            padding: 80px 0;
-            text-align: center;
-            color: white;
-            background-image: url('imagenes/portada 2.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 1;
-        }
-        
-        .hero .container {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            animation: fadeInUp 0.8s ease;
-        }
-        
-        .hero h2 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            margin-bottom: 40px;
-            opacity: 0.95;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            animation: fadeInUp 0.8s ease 0.2s both;
-        }
-        
-        .ebook-image {
-            max-width: 400px;
-            width: 100%;
-            height: auto;
-            margin: 40px auto;
-            display: block;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-            border-radius: 10px;
-            animation: fadeInUp 0.8s ease 0.4s both;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(45deg, #27ae60, #2ecc71);
-            color: white;
-            padding: 20px 50px;
-            font-size: 1.4rem;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            text-decoration: none;
+            line-height: 1.3;
+        }
+        
+        .navbar {
+            padding: 1rem 0;
+            transition: var(--transition);
+        }
+        
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+        }
+        
+        .navbar-brand {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary) !important;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+            color: var(--dark) !important;
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover {
+            color: var(--primary) !important;
+        }
+        
+        .btn {
+            padding: 0.6rem 1.5rem;
             border-radius: 50px;
-            box-shadow: 0 10px 30px rgba(46, 204, 113, 0.4);
-            transition: all 0.3s ease;
-            animation: fadeInUp 0.8s ease 0.6s both;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(46, 204, 113, 0.5);
-        }
-        
-        .button-subtext {
-            margin-top: 15px;
+            font-weight: 600;
+            transition: var(--transition);
+            text-transform: uppercase;
             font-size: 0.9rem;
-            opacity: 0.9;
-            animation: fadeInUp 0.8s ease 0.8s both;
+            letter-spacing: 0.5px;
         }
         
-        .credibility-text {
-            margin-top: 30px;
-            font-size: 1rem;
-            opacity: 0.85;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            animation: fadeInUp 0.8s ease 1s both;
-        }
-        
-        /* Problem Section */
-        .problem {
-            background: white;
-            padding: 80px 0;
-        }
-        
-        .problem h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 40px;
-            color: #2c3e50;
-        }
-        
-        .problem-content {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #555;
-        }
-        
-        .problem-points {
-            margin: 40px 0;
-        }
-        
-        .problem-point {
-            background: #f8f9fa;
-            padding: 20px;
-            margin: 20px 0;
-            border-left: 4px solid #27ae60;
-            border-radius: 5px;
-        }
-        
-        .problem-point h3 {
-            color: #27ae60;
-            margin-bottom: 10px;
-        }
-        
-        /* Solution Section */
-        .solution {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 80px 0;
-            color: white;
-            text-align: center;
-        }
-        
-        .solution h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 40px;
-        }
-        
-        .solution-content {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-        
-        .benefits {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin: 50px 0;
-        }
-        
-        .benefit {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-        }
-        
-        .benefit h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
+        .btn-warning {
+            background-color: var(--warning);
+            border-color: var(--warning);
             color: #fff;
         }
         
-        /* Bonus Section */
-        .bonus {
-            background: white;
-            padding: 80px 0;
-            text-align: center;
+        .btn-warning:hover {
+            background-color: #e67e22;
+            border-color: #e67e22;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(243, 156, 18, 0.4);
         }
         
-        .bonus h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-        
-        .bonus-badge {
-            display: inline-block;
-            background: #27ae60;
-            color: white;
-            padding: 10px 30px;
-            border-radius: 25px;
-            font-weight: 700;
-            margin-bottom: 30px;
-            transform: rotate(-2deg);
-        }
-        
-        .bonus-content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .bonus-image {
-            max-width: 300px;
-            width: 100%;
-            height: auto;
-            margin: 30px auto;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            border-radius: 10px;
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            background: #f8f9fa;
-            padding: 80px 0;
-        }
-        
-        .testimonials h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 50px;
-            color: #2c3e50;
-        }
-        
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .testimonial {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        
-        .testimonial-avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            background-size: cover;
-            background-position: center;
-            border: 3px solid #f0f0f0;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-            color: #555;
-        }
-        
-        .testimonial-author {
-            font-weight: 700;
-            color: #2c3e50;
-        }
-        
-        .testimonial-role {
-            color: #777;
-            font-size: 0.9rem;
-        }
-        
-        /* Final CTA */
-        .final-cta {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            padding: 80px 0;
-            text-align: center;
-            color: white;
-        }
-        
-        .final-cta h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 30px;
-        }
-        
-        .final-cta p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .price-highlight {
-            font-size: 3rem;
-            font-weight: 800;
-            margin: 30px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        /* Footer */
-        .footer {
-            background: #2c3e50;
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-        }
-        
-        .footer p {
-            opacity: 0.8;
-        }
-        
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero h2 {
-                font-size: 1.2rem;
-            }
-            
-            .cta-button {
-                padding: 15px 40px;
-                font-size: 1.2rem;
-            }
-            
-            .price-highlight {
-                font-size: 2.5rem;
-            }
+        .btn-outline-light:hover {
+            color: var(--primary) !important;
+            background: #fff;
         }
     </style>
 </head>
 <body>
-    <!-- Countdown Timer -->
-    <div style="background: linear-gradient(45deg, #ff6b6b, #ee5a24); color: white; padding: 15px 0; text-align: center; position: relative; z-index: 1000;">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient(135deg, rgba(44, 62, 80, 0.95) 0%, rgba(32, 45, 58, 0.95) 100%); backdrop-filter: blur(10px);">
         <div class="container">
-            <div style="font-size: 1.3rem; font-weight: 700; margin-bottom: 10px;">⏰ ESTA PROMOCIÓN ESTÁ POR TERMINAR</div>
-            <div id="countdown" style="font-size: 2rem; font-weight: 800; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                <div style="background: rgba(255,255,255,0.2); padding: 10px 15px; border-radius: 8px; min-width: 80px;">
-                    <div id="hours" style="font-size: 2.5rem;">00</div>
-                    <div style="font-size: 0.9rem; opacity: 0.9;">HORAS</div>
-                </div>
-                <div style="background: rgba(255,255,255,0.2); padding: 10px 15px; border-radius: 8px; min-width: 80px;">
-                    <div id="minutes" style="font-size: 2.5rem;">00</div>
-                    <div style="font-size: 0.9rem; opacity: 0.9;">MINUTOS</div>
-                </div>
-                <div style="background: rgba(255,255,255,0.2); padding: 10px 15px; border-radius: 8px; min-width: 80px;">
-                    <div id="seconds" style="font-size: 2.5rem;">00</div>
-                    <div style="font-size: 0.9rem; opacity: 0.9;">SEGUNDOS</div>
-                </div>
+            <a class="navbar-brand fw-bold text-white fs-3" href="#">PreciosAlimentos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#beneficios">Beneficios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contenido">Contenido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#preguntas">Preguntas</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="#oferta" class="btn btn-warning fw-bold">¡Quiero el Ebook!</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>¿Estás perdiendo dinero vendiendo comida sin darte cuenta?</h1>
-            <h2>Aprende a calcular el precio correcto de tus platos y empieza a ganar dinero real con tu negocio de comida.</h2>
-            
-            <img src="imagenes/portada 3.webp" alt="Aprende a Fijar Precios de los Alimentos" class="ebook-image">
-            
-            <a href="#bonos" class="cta-button">
-                ACCEDER
-            </a>
-            
-            <div class="button-subtext">
-                Acceso inmediato • Pago seguro
+    <!-- Hero Section with Gradient Background -->
+    <section class="py-5 py-lg-7 position-relative overflow-hidden" id="inicio" style="background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%);">
+        <!-- Decorative Elements -->
+        <div class="position-absolute top-0 end-0 w-100 h-100" style="background: url('Imagenes/portada 2.png') no-repeat right -100px top -100px; opacity: 0.1; z-index: 0;"></div>
+        <div class="position-absolute bottom-0 start-0 w-100 h-100" style="background: url('Imagenes/portada 1.png') no-repeat left -50px bottom -50px; opacity: 0.1; z-index: 0;"></div>
+        
+        <div class="container position-relative" style="z-index: 1;">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 text-white">
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2">¡NUEVA EDICIÓN 2025!</span>
+                    <h1 class="display-4 fw-bold mb-4">Domina el Arte de Fijar Precios en tu Negocio de Alimentos</h1>
+                    <p class="lead mb-4">Aprende estrategias comprobadas para maximizar tus ganancias sin perder clientes. ¡Incluye plantillas editables en Excel!</p>
+                    
+                    <div class="d-flex flex-wrap gap-4 mb-4">
+                        <div class="d-flex align-items-center">
+                            <div class="bg-white text-success rounded-circle d-flex align-items-center justify-content-center me-2" style="width: 28px; height: 28px;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Métodos comprobados</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-white text-success rounded-circle d-flex align-items-center justify-content-center me-2" style="width: 28px; height: 28px;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Plantillas editables</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 p-4 rounded-3 mb-4 border border-white border-opacity-10">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex">
+                                <img src="Imagenes/portada 2.webp" class="rounded-circle border border-3 border-warning" width="40" height="40" style="object-fit: cover;" alt="Cliente">
+                            </div>
+                            <div class="ms-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="text-warning me-2">★★★★★</div>
+                                    <span class="small">+1,200 emprendedores satisfechos</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="countdown-container bg-dark bg-opacity-50 p-3 rounded-2 text-center">
+                            <p class="mb-2 fw-bold text-warning">¡Oferta por tiempo limitado!</p>
+                            <div class="d-flex justify-content-center gap-2" id="countdown">
+                                <div class="text-center px-2">
+                                    <div class="bg-white bg-opacity-20 text-white p-2 rounded-2 fw-bold" style="min-width: 50px;">12</div>
+                                    <small class="text-white-50">Horas</small>
+                                </div>
+                                <div class="text-center px-2">
+                                    <div class="bg-white bg-opacity-20 text-white p-2 rounded-2 fw-bold" style="min-width: 50px;">00</div>
+                                    <small class="text-white-50">Minutos</small>
+                                </div>
+                                <div class="text-center px-2">
+                                    <div class="bg-white bg-opacity-20 text-white p-2 rounded-2 fw-bold" style="min-width: 50px;">00</div>
+                                    <small class="text-white-50">Segundos</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#oferta" class="btn btn-warning btn-lg w-100 py-3 fw-bold mb-3 shadow-lg hover-lift">
+                        <i class="fas fa-shopping-cart me-2"></i> QUIERO EL EBOOK AHORA
+                    </a>
+                    
+                    <div class="text-center">
+                        <div class="d-inline-flex align-items-center bg-white bg-opacity-10 p-2 px-3 rounded-pill">
+                            <i class="fas fa-shield-alt text-warning me-2"></i>
+                            <small class="text-white-50">Pago seguro · Garantía de 30 días</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 position-relative">
+                    <div class="position-relative">
+                        <div class="position-relative" style="transform-style: preserve-3d;">
+                            <img src="Imagenes/portada 1.png" alt="Portada del Ebook" class="img-fluid rounded-4 shadow-lg position-relative" style="z-index: 2; transform: rotateY(5deg) rotateX(5deg);">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-warning rounded-4" style="transform: translateZ(-10px) translateY(10px) translateX(-10px); z-index: 1; opacity: 0.5;"></div>
+                        </div>
+                        
+                        <div class="position-absolute top-0 start-0 translate-middle bg-warning text-dark fw-bold px-3 py-2 rounded-pill shadow" style="transform: rotate(-10deg); z-index: 3;">
+                            <i class="fas fa-star me-1"></i> MÁS VENDIDO
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <div class="d-flex justify-content-center gap-3">
+                                <div class="text-center">
+                                    <div class="bg-primary text-white d-inline-flex align-items-center justify-content-center rounded-circle mb-2 shadow" style="width: 50px; height: 50px;">
+                                        <i class="fas fa-file-pdf fs-4"></i>
+                                    </div>
+                                    <div class="small text-white">PDF Descargable</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="bg-success text-white d-inline-flex align-items-center justify-content-center rounded-circle mb-2 shadow" style="width: 50px; height: 50px;">
+                                        <i class="fas fa-file-excel fs-4"></i>
+                                    </div>
+                                    <div class="small text-white">Plantillas en Excel</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="bg-info text-white d-inline-flex align-items-center justify-content-center rounded-circle mb-2 shadow" style="width: 50px; height: 50px;">
+                                        <i class="fas fa-headset fs-4"></i>
+                                    </div>
+                                    <div class="small text-white">Soporte 24/7</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="credibility-text">
-                Guía práctica para emprendedores de comida, cocineros y dueños de pequeños negocios gastronómicos.
-            </div>
-            
-            <!-- <div class="price-section" style="margin-top: 40px; text-align: center;">
-                <p style="font-size: 1.2rem; margin-bottom: 10px;">Precio especial por tiempo limitado:</p>
-                <div style="font-size: 1.5rem; color: #ff6b6b; text-decoration: line-through; margin-bottom: 5px;">$21.99 USD</div>
-                <div style="font-size: 2rem; font-weight: bold; color: #27ae60;">Solo $9.99 USD</div>
-                <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">¡Ahorra $12.00 USD!</p>
-            </div> -->
         </div>
     </section>
+
+    <!-- Notification Popup -->
+    <div id="notification" class="notification">
+        <div class="notification-content">
+            <img src="Imagenes/user1.jpg" alt="Usuario" class="notification-avatar">
+            <div class="notification-text">
+                <strong>María de Lima</strong> acaba de ACCEDER al ebook
+                <span class="notification-time">Hace 2 minutos</span>
+            </div>
+        </div>
+        <button id="close-notification" class="close-notification">&times;</button>
+    </div>
 
     <!-- Problem Section -->
     <section class="problem">
         <div class="container">
-            <h2>El error que está arruinando las ganancias de muchos negocios de comida</h2>
-            
-            <div class="problem-content">
-                <p>Cada día, miles de emprendedores gastronómicos cometen el mismo error fatal: venden sus deliciosos platos sin saber si realmente están ganando dinero.</p>
-                
-                <div class="problem-points">
-                    <div class="problem-point">
-                        <h3>❌ Costos ocultos que ignoras</h3>
-                        <p>No solo es el precio de los ingredientes. Hay electricidad, gas, empaques, tu tiempo, y mucho más que no estás calculando.</p>
-                    </div>
-                    
-                    <div class="problem-point">
-                        <h3>❌ Precios por intuición, no por cálculo</h3>
-                        <p>Pones precios "que parecen justos" sin saber si cubren todos tus costos y te dejan una ganancia real.</p>
-                    </div>
-                    
-                    <div class="problem-point">
-                        <h3>❌ Competencia que te gana por estrategia</h3>
-                        <p>Mientras tú vendes por instinto, tus competidores usan fórmulas precisas y dominan el mercado.</p>
-                    </div>
-                    
-                    <div class="problem-point">
-                        <h3>❌ Agotamiento sin recompensa</h3>
-                        <p>Trabajas horas extras, haces comida increíble, pero al final del mes... ¿dónde quedó el dinero?</p>
-                    </div>
+            <h2>¿Estás Perdiendo Dinero por No Saber Cuánto Cobrar?</h2>
+            <p>Si estás aquí, probablemente te has preguntado alguna vez:</p>
+            <ul class="problem-list">
+                <li>¿Cómo sé si estoy cobrando lo justo por mis productos?</li>
+                <li>¿Por qué no tengo las ganancias que esperaba a fin de mes?</li>
+                <li>¿Cómo puedo competir sin regalar mi trabajo?</li>
+            </ul>
+            <p>No eres el único. Muchos emprendedores de alimentos cometen el error de no calcular correctamente sus precios, lo que les hace perder dinero en cada venta.</p>
+        </div>
+    </section>
+
+    <!-- Agitation Section -->
+    <section class="agitation">
+        <div class="container">
+            <h2>El Error que Está Costándote Dinero</h2>
+            <div class="agitation-grid">
+                <div class="agitation-item">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Pérdidas Invisibles</h3>
+                    <p>Por cada producto que vendes sin calcular bien el precio, podrías estar perdiendo hasta un 40% de tus ganancias potenciales.</p>
                 </div>
-                
-                <p><strong>La verdad es que sin una estrategia de precios correcta, estás trabajando para perder dinero, sin importar qué tan deliciosa sea tu comida.</strong></p>
+                <div class="agitation-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Tiempo Mal Invertido</h3>
+                    <p>Horas de trabajo que no se ven reflejadas en tus ingresos porque no estás cobrando lo justo por tu tiempo.</p>
+                </div>
+                <div class="agitation-item">
+                    <i class="fas fa-chart-line-down"></i>
+                    <h3>Crecimiento Estancado</h3>
+                    <p>Sin ganancias reales, es imposible hacer crecer tu negocio como mereces.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -479,103 +327,98 @@
     <!-- Solution Section -->
     <section class="solution">
         <div class="container">
-            <h2>La solución definitiva para tus precios</h2>
-            
+            <h2>La Solución que Cambiará tu Negocio</h2>
             <div class="solution-content">
-                <p>"Aprende a Fijar Precios de los Alimentos" no es otro curso teórico. Es una guía práctica, paso a paso, que te enseñará exactamente cómo calcular precios que te hagan ganar dinero real.</p>
-                
-                <div class="benefits">
-                    <div class="benefit">
-                        <h3>📊 Fórmulas probadas</h3>
-                        <p>Sistema exacto para calcular costos reales y fijar precios rentables</p>
-                    </div>
-                    
-                    <div class="benefit">
-                        <h3>💰 Maximiza ganancias</h3>
-                        <p>Aprende a identificar oportunidades de aumento de precios sin perder clientes</p>
-                    </div>
-                    
-                    <div class="benefit">
-                        <h3>⏰ Ahorra tiempo</h3>
-                        <p>Plantillas listas para usar que te ahorran horas de cálculos</p>
-                    </div>
-                    
-                    <div class="benefit">
-                        <h3>🎯 Precisión exacta</h3>
-                        <p>Nunca más tendrás dudas si estás ganando o perdiendo dinero</p>
+                <div class="solution-text">
+                    <p>Te presento el ebook <strong>"APRENDE A PONER PRECIO A LOS ALIMENTOS"</strong>, una guía completa que te enseñará paso a paso cómo fijar precios que te permitan ganar lo que mereces.</p>
+                    <p>Con este método probado, podrás:</p>
+                    <ul class="solution-list">
+                        <li><i class="fas fa-check"></i> Calcular el costo real de tus productos</li>
+                        <li><i class="fas fa-check"></i> Identificar costos ocultos que están afectando tus ganancias</li>
+                        <li><i class="fas fa-check"></i> Fijar precios competitivos sin regalar tu trabajo</li>
+                        <li><i class="fas fa-check"></i> Aumentar tus ganancias desde la primera venta</li>
+                    </ul>
+                </div>
+                <div class="solution-image">
+                    <div class="ebook-showcase">
+                        <img src="Imagenes/portada 1.png" alt="Vista previa del ebook" loading="lazy" class="ebook-preview">
+                        <div class="ebook-highlights">
+                            <div class="highlight"><i class="fas fa-check-circle"></i> Guía completa</div>
+                            <div class="highlight"><i class="fas fa-check-circle"></i> Plantillas incluidas</div>
+                            <div class="highlight"><i class="fas fa-check-circle"></i> Acceso inmediato</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Bonus Section -->
-    <section class="bonus" id="bonos">
+    <!-- Benefits Section -->
+    <section class="benefits">
         <div class="container">
-            <h2>3 BONOS EXCLUSIVOS GRATIS</h2>
-            <div class="bonus-badge">SOLO POR TIEMPO LIMITADO</div>
+            <h2>Beneficios Clave</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Fórmulas Comprobadas</h3>
+                    <p>Aprende el método exacto para calcular precios que maximizan tus ganancias.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Ahorra Tiempo</h3>
+                    <p>Deja de adivinar y sigue un proceso claro y sencillo.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Mayores Ganancias</h3>
+                    <p>Descubre cómo aumentar tus márgenes de beneficio de forma ética.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Sin Riesgo</h3>
+                    <p>Garantía de devolución de 30 días si no quedas satisfecho.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Acceso Inmediato</h3>
+                    <p>Accede al material en cualquier dispositivo, en cualquier momento.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-gift"></i>
+                    <h3>Bono Especial</h3>
+                    <p>Recibe de regalo la guía "Escalando tu negocio" al acceder hoy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="container">
+            <h2>¿Qué Encontrarás en el Ebook?</h2>
+            <div class="module">
+                <h3><span class="emoji">🔹</span> Módulo 1: Introducción a la fijación de precios en alimentos <span class="emoji">🍽️💡</span></h3>
+                <ul>
+                    <li>❓ ¿Por qué es tan importante fijar el precio correcto?</li>
+                    <li>🧠 Mitos comunes al fijar precios en gastronomía.</li>
+                    <li>📉 Casos reales de pérdidas por no calcular bien.</li>
+                </ul>
+            </div>
             
-            <div class="bonus-content">
-                <h3 style="font-size: 1.8rem; margin-bottom: 20px;">BONO 1: "De cocina casera a Restaurante"</h3>
-                <p>Además del ebook principal, recibirás este bono exclusivo donde aprenderás:</p>
-                
-                <ul style="text-align: left; max-width: 400px; margin: 30px auto;">
-                    <li>Cómo pasar de vender casero a tener un negocio formal</li>
-                    <li>Estrategias para aumentar tu producción sin perder calidad</li>
-                    <li>Sistemas para gestionar pedidos y clientes</li>
-                    <li>Marketing digital para negocios de comida</li>
+            <div class="module">
+                <h3><span class="emoji">🔹</span> Módulo 2: Conoce tu producto a fondo <span class="emoji">🥦📝</span></h3>
+                <ul>
+                    <li>🧾 Cómo desglosar ingredientes y cantidades exactas.</li>
+                    <li>🛠️ Herramientas para registrar tus recetas con precisión.</li>
+                    <li>🌍 El impacto de la calidad y origen del insumo.</li>
                 </ul>
-                
-                <img src="imagenes/BONO.png" alt="Bono De cocina casera a Restaurante" class="bonus-image">
             </div>
-        </div>
-    </section>
-
-    <!-- Second Bonus Section -->
-    <section class="bonus" style="background: #f8f9fa;">
-        <div class="container">
-            <div class="bonus-content">
-                <h3 style="font-size: 1.8rem; margin-bottom: 20px; color: #2c3e50;">BONO 2: "Cómo evitar los 7 errores que hacen quebrar negocios de comida"</h3>
-                <p style="color: #555;">El segundo bono que te salvará de cometer los errores fatales que cierran negocios:</p>
-                
-                <ul style="text-align: left; max-width: 400px; margin: 30px auto; color: #555;">
-                    <li>Errores de precios que te hacen perder dinero sin darte cuenta</li>
-                    <li>Problemas de gestión que agotan tus recursos</li>
-                    <li>Errores de marketing que no atraen clientes</li>
-                    <li>Problemas legales que pueden cerrar tu negocio</li>
-                    <li>Errores de producción que matan tu rentabilidad</li>
-                    <li>Errores de atención al cliente que te hacen perder ventas</li>
-                    <li>Errores financieros que llevan a la quiebra</li>
-                </ul>
-                
-                <img src="imagenes/bono 2.png" alt="Bono Cómo evitar los 7 errores que hacen quebrar negocios de comida" class="bonus-image">
-            </div>
-        </div>
-    </section>
-
-    <!-- Third Bonus Section -->
-    <section class="bonus">
-        <div class="container">
-            <div class="bonus-content">
-                <h3 style="font-size: 1.8rem; margin-bottom: 20px;">BONO 3: "El truco psicológico para que tus clientes compren más"</h3>
-                <p>El tercer bono que te enseñará a usar la psicología para aumentar tus ventas:</p>
-                
-                <ul style="text-align: left; max-width: 400px; margin: 30px auto;">
-                    <li>El principio de escasez que dispara las compras</li>
-                    <li>Cómo usar los precios ancla para vender más</li>
-                    <li>El efecto de urgencia que impulsa la decisión</li>
-                    <li>Psicología de colores en tu menú y packaging</li>
-                    <li>Palabras mágicas que hacen comprar</li>
-                    <li>Cómo crear FOMO (miedo a perderse algo) en tus clientes</li>
-                    <li>El poder de la prueba social gastronómica</li>
-                </ul>
-                
-                <img src="imagenes/bono 3.png" alt="Bono El truco psicológico para que tus clientes compren más" class="bonus-image">
-                
-                <p><strong>Estos 3 bonos solo están disponibles para los primeros compradores. ¡No los dejes pasar!</strong></p>
-                
-                <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10&bid=1772795477141" class="cta-button" onclick="fbq('track', 'InitiateCheckout');" style="margin-top: 30px;">
-                    QUIERO LOS 3 BONOS GRATIS
+            
+            <!-- Add more modules following the same pattern -->
+            
+            <div class="cta-container">
+                <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10" class="cta-button">
+                    <i class="fas fa-lock"></i> QUIERO ACCEDER AL EBOOK AHORA
                 </a>
             </div>
         </div>
@@ -584,78 +427,87 @@
     <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="container">
-            <h2>Emprendedores como tú ya están transformando sus negocios</h2>
-            
-            <div class="testimonial-grid">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonials-grid">
                 <div class="testimonial">
-                    <div class="testimonial-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/68.jpg');"></div>
-                    <div class="testimonial-text">
-                        "Antes vendía mis empanadas sin saber si ganaba algo. Ahora con las fórmulas del ebook, mis ganancias aumentaron un 40% y tengo control total de mis números."
+                    <div class="testimonial-content">
+                        <div class="testimonial-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                        <p>"Gracias a este ebook pude aumentar mis precios un 30% sin perder clientes. ¡Mis ganancias se han duplicado!"</p>
+                        <div class="testimonial-author">
+                            <strong>Ana M.</strong>
+                            <span>Dueña de panadería</span>
+                        </div>
                     </div>
-                    <div class="testimonial-author">María González</div>
-                    <div class="testimonial-role">Vendedora de empanadas caseras</div>
+                </div>
+                <!-- Add more testimonials -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="offer">
+        <div class="container">
+            <h2>Oferta Especial por Tiempo Limitado</h2>
+            <div class="offer-content">
+                <div class="offer-item main-offer">
+                    <h3>Ebook "Aprende a Poner Precio a los Alimentos"</h3>
+                    <div class="price">
+                        <span class="original-price">$29.99</span>
+                        <span class="current-price">$9.99 USD</span>
+                    </div>
+                    <ul class="offer-features">
+                        <li><i class="fas fa-check"></i> Guía completa de fijación de precios</li>
+                        <li><i class="fas fa-check"></i> Plantillas descargables</li>
+                        <li><i class="fas fa-check"></i> Acceso de por vida</li>
+                        <li><i class="fas fa-check"></i> Actualizaciones gratuitas</li>
+                    </ul>
                 </div>
                 
-                <div class="testimonial">
-                    <div class="testimonial-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/45.jpg');"></div>
-                    <div class="testimonial-text">
-                        "El mejor dinero que he invertido en mi negocio. Aprendí a calcular correctamente y por primera vez en 3 años, estoy ganando dinero de verdad."
-                    </div>
-                    <div class="testimonial-author">Carlos Rodríguez</div>
-                    <div class="testimonial-role">Chef de comida corrida</div>
+                <div class="offer-bonus">
+                    <h3>Bono Especial (GRATIS)</h3>
+                    <p>"Escalando tu negocio: de comida casera a restaurante"</p>
+                    <p class="bonus-value">Valor: $19.99</p>
                 </div>
                 
-                <div class="testimonial">
-                    <div class="testimonial-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/76.jpg');"></div>
-                    <div class="testimonial-text">
-                        "Las plantillas me ahorraron horas de trabajo. Ahora sé exactamente cuánto cobrar por cada plato y mis clientes siguen felices."
+                <div class="order-bump">
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        <span class="order-bump-text">Sí, quiero agregar "Pasteles Saludables y Deliciosos SIN GLUTEN" por solo <strong>$4.99 más</strong> (¡Ahorro del 50%!)</span>
+                    </label>
+                </div>
+                
+                <div class="cta-container">
+                    <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10" class="cta-button">
+                        <i class="fas fa-lock"></i> QUIERO ACCEDER AL EBOOK AHORA
+                    </a>
+                    <div class="secure-checkout">
+                        <i class="fas fa-lock"></i> Pago seguro - 256-bit SSL
                     </div>
-                    <div class="testimonial-author">Ana Martínez</div>
-                    <div class="testimonial-role">Pastelera y repostera</div>
+                </div>
+                
+                <div class="guarantee-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Garantía de 30 días - Sin preguntas</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Order Summary Section -->
-    <section class="bonus" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px 0;">
+    <!-- FAQ Section -->
+    <section class="faq">
         <div class="container">
-            <div class="bonus-content" style="text-align: center;">
-                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 30px; color: white;">TU PEDIDO COMPLETO</h2>
-                
-                <div style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px); max-width: 600px; margin: 0 auto;">
-                    <div style="text-align: left; color: white; margin-bottom: 20px;">
-                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">✅ Ebook Principal:</h3>
-                        <p style="margin-left: 30px; margin-bottom: 10px;">"Aprende a Fijar Precios de los Alimentos" - <strong>Valor: $9.99 USD</strong></p>
-                    </div>
-                    
-                    <div style="text-align: left; color: white; margin-bottom: 20px;">
-                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">✅ Bono 1:</h3>
-                        <p style="margin-left: 30px; margin-bottom: 10px;">"De cocina casera a Restaurante" - <strong style="text-decoration: line-through;">Valor: $27.00 USD</strong></p>
-                    </div>
-                    
-                    <div style="text-align: left; color: white; margin-bottom: 20px;">
-                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">✅ Bono 2:</h3>
-                        <p style="margin-left: 30px; margin-bottom: 10px;">"Cómo evitar los 7 errores que hacen quebrar negocios de comida" - <strong style="text-decoration: line-through;">Valor: $37.00 USD</strong></p>
-                    </div>
-                    
-                    <div style="text-align: left; color: white; margin-bottom: 30px;">
-                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">✅ Bono 3:</h3>
-                        <p style="margin-left: 30px; margin-bottom: 10px;">"El truco psicológico para que tus clientes compren más" - <strong style="text-decoration: line-through;">Valor: $32.00 USD</strong></p>
-                    </div>
-                    
-                    <hr style="border: 1px solid rgba(255, 255, 255, 0.3); margin: 30px 0;">
-                    
-                    <div style="text-align: center;">
-                        <p style="font-size: 1.2rem; color: white; text-decoration: line-through; margin-bottom: 10px;">Valor Total: $105.99 USD</p>
-                        <div style="font-size: 3rem; font-weight: 800; color: #27ae60; margin: 20px 0;">TODO POR SOLO $9.99 USD</div>
-                        <p style="font-size: 1.1rem; color: white;">¡Ahorro de $96.00 USD!</p>
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Cómo recibo el material?<span class="faq-toggle">+</span></h3>
+                    <div class="faq-answer">
+                        <p>Recibirás acceso inmediato al área de miembros después de confirmarse tu pago. Podrás acceder desde cualquier dispositivo con conexión a internet.</p>
                     </div>
                 </div>
-                
-                <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10&bid=1772795477141" class="cta-button" onclick="fbq('track', 'InitiateCheckout');" style="margin-top: 40px; background: linear-gradient(45deg, #27ae60, #2ecc71);">
-                    QUIERO TODO POR $9.99
-                </a>
+                <!-- Add more FAQ items -->
             </div>
         </div>
     </section>
@@ -663,124 +515,56 @@
     <!-- Final CTA Section -->
     <section class="final-cta">
         <div class="container">
-            <h2>¿Estás listo para dejar de perder dinero y empezar a ganar?</h2>
-            <p>La decisión correcta puede cambiar completamente tu negocio. No dejes pasar más tiempo vendiendo sin saber si estás ganando.</p>
+            <h2>No dejes que la indecisión te cueste dinero</h2>
+            <p>Comienza hoy mismo a fijar precios que reflejen el valor de tu trabajo y te permitan crecer.</p>
             
-            <div class="price-highlight">
-                HOY Solo $9.99 USD
+            <div class="countdown-container">
+                <p class="countdown-text">La promoción termina en:</p>
+                <div id="countdown2" class="countdown">
+                    <div class="countdown-item">
+                        <span id="hours2">12</span>
+                        <span>Horas</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes2">00</span>
+                        <span>Minutos</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds2">00</span>
+                        <span>Segundos</span>
+                    </div>
+                </div>
             </div>
             
-            <img src="imagenes/portada 1.png" alt="Aprende a Fijar Precios de los Alimentos" class="ebook-image" style="max-width: 300px; margin: 30px auto;">
-            
-            <p style="font-size: 1.1rem; margin-bottom: 30px;">
-                Menos de lo que ganas en UN solo plato correctamente calculado
-            </p>
-            
-            <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10&bid=1772795477141" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">
-                QUIERO EMPEZAR AHORA
+            <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10" class="cta-button">
+                <i class="fas fa-lock"></i> QUIERO ACCEDER AL EBOOK AHORA
             </a>
-            
-            <div class="button-subtext" style="margin-top: 20px;">
-                Acceso inmediato • Garantía de satisfacción • Pago 100% seguro
-            </div>
-            
-            <p style="margin-top: 40px; font-size: 0.9rem; opacity: 0.8;">
-                Recuerda: también recibes los 3 bonos "De cocina casera a Restaurante", "Cómo evitar los 7 errores que hacen quebrar negocios de comida" y "El truco psicológico para que tus clientes compren más" GRATIS
-            </p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Aprende a Fijar Precios de los Alimentos. Todos los derechos reservados.</p>
-            <p>Desarrollado con ❤️ para emprendedores gastronómicos</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Aprende a Poner Precio</h3>
+                    <p>Tu guía definitiva para fijar precios rentables</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Términos de Servicio</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="footer-disclaimer">
+                    <p>© 2025 Aprende a Poner Precio. Todos los derechos reservados.</p>
+                    <p>Este sitio no es parte de Facebook o Facebook Inc. Además, este sitio NO está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc.</p>
+                    <p>Los resultados pueden variar según el esfuerzo y dedicación de cada persona. No garantizamos resultados específicos.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Countdown Timer Script
-        function startCountdown() {
-            // Set the countdown time (24 hours from now)
-            const countdownTime = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
-            const endTime = Date.now() + countdownTime;
-            
-            // Store end time in localStorage to persist across page refreshes
-            if (!localStorage.getItem('countdownEndTime')) {
-                localStorage.setItem('countdownEndTime', endTime.toString());
-            } else {
-                const storedEndTime = parseInt(localStorage.getItem('countdownEndTime'));
-                // If the stored time has passed, reset it
-                if (storedEndTime < Date.now()) {
-                    localStorage.setItem('countdownEndTime', endTime.toString());
-                }
-            }
-            
-            function updateCountdown() {
-                const now = Date.now();
-                const endTime = parseInt(localStorage.getItem('countdownEndTime'));
-                const timeLeft = endTime - now;
-                
-                if (timeLeft > 0) {
-                    const hours = Math.floor(timeLeft / (1000 * 60 * 60));
-                    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-                    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-                    
-                    document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-                    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-                    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-                } else {
-                    // Countdown finished
-                    document.getElementById('hours').textContent = '00';
-                    document.getElementById('minutes').textContent = '00';
-                    document.getElementById('seconds').textContent = '00';
-                    
-                    // Optionally show a message when countdown ends
-                    const countdownElement = document.getElementById('countdown');
-                    countdownElement.innerHTML = '<div style="font-size: 1.5rem; font-weight: 800;">¡LA PROMOCIÓN HA TERMINADO!</div>';
-                }
-            }
-            
-            // Update immediately and then every second
-            updateCountdown();
-            setInterval(updateCountdown, 1000);
-        }
-        
-        // Start countdown when page loads
-        window.addEventListener('load', startCountdown);
-        
-        // Smooth scroll for any anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Add scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all sections
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(section);
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
 </body>
 </html>
