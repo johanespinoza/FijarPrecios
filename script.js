@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
+    
     // Countdown Timer
     function updateCountdown() {
         const now = new Date();
@@ -20,16 +32,20 @@ document.addEventListener('DOMContentLoaded', function() {
         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
         
         // Update both countdown timers
-        document.querySelectorAll('#hours, #hours2').forEach(el => {
-            el.textContent = hours.toString().padStart(2, '0');
+        const hoursElements = document.querySelectorAll('#hours, #hours2');
+        const minutesElements = document.querySelectorAll('#minutes, #minutes2');
+        const secondsElements = document.querySelectorAll('#seconds, #seconds2');
+        
+        hoursElements.forEach(el => {
+            if (el) el.textContent = hours.toString().padStart(2, '0');
         });
         
-        document.querySelectorAll('#minutes, #minutes2').forEach(el => {
-            el.textContent = minutes.toString().padStart(2, '0');
+        minutesElements.forEach(el => {
+            if (el) el.textContent = minutes.toString().padStart(2, '0');
         });
         
-        document.querySelectorAll('#seconds, #seconds2').forEach(el => {
-            el.textContent = seconds.toString().padStart(2, '0');
+        secondsElements.forEach(el => {
+            if (el) el.textContent = seconds.toString().padStart(2, '0');
         });
     }
     
@@ -45,8 +61,139 @@ document.addEventListener('DOMContentLoaded', function() {
     // Sample names for notifications
     const names = [
         'María', 'Carlos', 'Ana', 'Luis', 'Sofía', 'Diego', 'Valentina', 'Andrés',
-        'Camila', 'Juan', 'Laura', 'Miguel', 'Isabella', 'José', 'Gabriela'
+        'Camila', 'Juan', 'Laura', 'Miguel', 'Isabella', 'José', 'Gabriela', 'Roberto',
+        'Patricia', 'Fernando', 'Claudia', 'Ricardo'
     ];
+    
+    const cities = ['de Lima', 'de Bogotá', 'de México', 'de Santiago', 'de Caracas', 'de Quito', 'de La Paz', 'de Montevideo'];
+    
+    function showNotification() {
+        if (!notification) return;
+        
+        const randomName = names[Math.floor(Math.random() * names.length)];
+        const randomCity = cities[Math.floor(Math.random() * cities.length)];
+        
+        const notificationText = notification.querySelector('.notification-text strong');
+        const notificationTime = notification.querySelector('.notification-time');
+        
+        if (notificationText) {
+            notificationText.textContent = `${randomName} ${randomCity}`;
+        }
+        
+        if (notificationTime) {
+            const minutes = Math.floor(Math.random() * 10) + 1;
+            notificationTime.textContent = `Hace ${minutes} minutos`;
+        }
+        
+        notification.classList.add('show');
+        
+        // Clear existing timer
+        if (notificationTimer) {
+            clearTimeout(notificationTimer);
+        }
+        
+        // Auto hide after 5 seconds
+        notificationTimer = setTimeout(() => {
+            hideNotification();
+        }, 5000);
+    }
+    
+    function hideNotification() {
+        if (notification) {
+            notification.classList.remove('show');
+        }
+    }
+    
+    // Close notification on button click
+    if (closeNotification) {
+        closeNotification.addEventListener('click', hideNotification);
+    }
+    
+    // Show notifications periodically
+    setInterval(showNotification, 15000); // Every 15 seconds
+    setTimeout(showNotification, 3000); // First notification after 3 seconds
+    
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('h3');
+        if (question) {
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all other FAQ items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Form validation (if forms exist)
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add form validation logic here
+            console.log('Form submitted');
+        });
+    });
+    
+    // Loading states for buttons
+    const buttons = document.querySelectorAll('.cta-button, .btn-warning');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            this.classList.add('loading');
+            setTimeout(() => {
+                this.classList.remove('loading');
+            }, 2000);
+        });
+    });
+    
+    // Intersection Observer for animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-fade-in');
+            }
+        });
+    }, observerOptions);
+    
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
+    
+    console.log('Website initialized successfully!');
+});
     
     // Sample cities for notifications
     const cities = ['Lima', 'Bogotá', 'Buenos Aires', 'Santiago', 'Ciudad de México'];

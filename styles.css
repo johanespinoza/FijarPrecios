@@ -1,7 +1,8 @@
-/* Base Styles */
+/* Base Styles - Optimizado */
 :root {
     --primary-color: #28a745;
-    --secondary-color: #218838;
+    --primary-dark: #218838;
+    --secondary-color: #3498db;
     --text-color: #333;
     --light-text: #6c757d;
     --background: #ffffff;
@@ -82,21 +83,65 @@ img {
     margin-right: 10px;
 }
 
-/* Header */
-.header {
-    padding: 20px 0;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+/* Problem Section */
+.problem {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    text-align: center;
 }
 
-.logo h1 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin: 0;
+.problem h2 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.problem p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--light-text);
+}
+
+.problem-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: left;
+}
+
+.problem-list li {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border-left: 4px solid var(--primary-color);
+    font-size: 1.1rem;
+    position: relative;
+    transition: var(--transition);
+}
+
+.problem-list li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.problem-list li::before {
+    content: "❓";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--primary-color);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
 }
 
 /* Hero Section */

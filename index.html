@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="light">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aprende a fijar precios correctamente para tu negocio de alimentos y maximiza tus ganancias con nuestro ebook especializado.">
-    <meta name="facebook-domain-verification" content="yevtvqq9gsca0brtyu4f3akdjoln7b" />
     <title>Aprende a Poner Precio a los Alimentos - Guía Definitiva</title>
     
     <!-- Meta Pixel Code -->
@@ -25,7 +24,7 @@
     <!-- End Meta Pixel Code -->
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="Imagenes/favicon.png">
+    <link rel="icon" type="image/png" href="Imagenes/portada 1.png">
     
     <!-- Hojas de estilo -->
     <link rel="stylesheet" href="styles.css">
@@ -33,538 +32,1360 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Preload de imágenes críticas -->
-    <link rel="preload" as="image" href="Imagenes/hero-bg.jpg">
+    <link rel="preload" as="image" href="Imagenes/portada 1.png">
+    <link rel="preload" as="image" href="Imagenes/portada 2.webp">
     
     <!-- Metaetiquetas para redes sociales -->
     <meta property="og:title" content="Aprende a Poner Precio a los Alimentos - Guía Definitiva">
     <meta property="og:description" content="Descubre estrategias comprobadas para fijar precios rentables en tu negocio de alimentos y maximiza tus ganancias.">
-    <meta property="og:image" content="https://tudominio.com/Imagenes/og-image.jpg">
-    <meta property="og:url" content="https://tudominio.com">
+    <meta property="og:image" content="Imagenes/portada 1.png">
+    <meta property="og:url" content="./index.html">
     <meta name="twitter:card" content="summary_large_image">
     
     <!-- Estilos críticos en línea -->
     <style>
         :root {
-            --primary: #2ecc71;
-            --primary-dark: #27ae60;
-            --secondary: #3498db;
+            /* Colores relacionados con alimentos y precios */
+            --primary: #ff6b35; /* Naranja - energía, urgencia */
+            --primary-dark: #e55a2b;
+            --secondary: #4ecdc4; /* Verde menta - frescura, dinero */
+            --accent: #ff4757; /* Rojo tomate - urgencia, pasión */
+            --warning: #ffa502; /* Amarillo mostaza - atención */
+            --success: #26de81; /* Verde lima - éxito */
             --dark: #2c3e50;
-            --light: #f8f9fa;
-            --danger: #e74c3c;
-            --warning: #f39c12;
-            --success: #2ecc71;
-            --text: #2c3e50;
-            --text-light: #7f8c8d;
-            --border-radius: 12px;
-            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            --transition: all 0.3s ease;
+            --light: #fef5e7; /* Crema suave */
+            --white: #ffffff;
+            --orange-light: #ff9ff3; /* Naranja pastel */
+            --green-dark: #00b894; /* Verde oscuro */
+            
+            /* Gradientes relacionados con alimentos */
+            --gradient-1: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); /* Naranja a amarillo */
+            --gradient-2: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); /* Verde menta */
+            --gradient-3: linear-gradient(135deg, #ff4757 0%, #ff6348 100%); /* Rojo tomate */
+            --gradient-4: linear-gradient(135deg, #26de81 0%, #20bf6b 100%); /* Verde lima */
+            --gradient-urgency: linear-gradient(135deg, #ff4757 0%, #ff6b35 50%, #ffa502 100%); /* Urgencia */
+            
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px rgba(0,0,0,0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         
         body {
             font-family: 'Poppins', sans-serif;
-            color: var(--text);
-            line-height: 1.7;
+            color: var(--dark);
+            line-height: 1.6;
             overflow-x: hidden;
+            background: var(--white);
         }
         
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            line-height: 1.3;
+            line-height: 1.2;
         }
         
         .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-md);
             padding: 1rem 0;
             transition: var(--transition);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
         }
         
         .navbar.scrolled {
-            background: rgba(255, 255, 255, 0.98) !important;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
             padding: 0.5rem 0;
+            background: rgba(255, 255, 255, 0.98);
         }
         
         .navbar-brand {
-            font-size: 1.75rem;
-            font-weight: 700;
+            font-size: 1.5rem;
+            font-weight: 800;
             color: var(--primary) !important;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .navbar-brand:hover {
+            transform: translateY(-2px);
         }
         
         .nav-link {
-            font-weight: 500;
-            padding: 0.5rem 1rem !important;
             color: var(--dark) !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
             transition: var(--transition);
+            position: relative;
         }
         
-        .nav-link:hover {
-            color: var(--primary) !important;
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+            transform: translateX(-50%);
         }
         
-        .btn {
-            padding: 0.6rem 1.5rem;
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-primary-custom {
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 0.75rem 2rem;
             border-radius: 50px;
             font-weight: 600;
-            transition: var(--transition);
             text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            box-shadow: var(--shadow-md);
+            text-decoration: none;
+            display: inline-block;
         }
         
-        .btn-warning {
-            background-color: var(--warning);
-            border-color: var(--warning);
-            color: #fff;
-        }
-        
-        .btn-warning:hover {
-            background-color: #e67e22;
-            border-color: #e67e22;
+        .btn-primary-custom:hover {
+            background: var(--primary-dark);
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(243, 156, 18, 0.4);
+            box-shadow: var(--shadow-lg);
+            color: var(--white);
         }
         
-        .btn-outline-light:hover {
-            color: var(--primary) !important;
-            background: #fff;
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(46, 204, 113, 0.9) 0%, rgba(39, 174, 96, 0.9) 100%), url('Imagenes/portada 2.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-top: 80px;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(44, 62, 80, 0.3);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+        
+        .section-light {
+            background: var(--light);
+        }
+        
+        .section-dark {
+            background: var(--dark);
+            color: var(--white);
+        }
+        
+        .card-custom {
+            border: none;
+            border-radius: 15px;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .card-custom:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .image-showcase {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            transition: var(--transition);
+        }
+        
+        .image-showcase:hover {
+            transform: scale(1.05);
+        }
+        
+        .image-showcase img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .badge-custom {
+            background: var(--accent);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .pricing-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: var(--shadow-xl);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-1);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-15px);
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            margin: 1rem 0;
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.3;
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: var(--white);
+            font-size: 2rem;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+        }
+        
+        .feature-icon:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, var(--dark) 0%, #34495e 100%);
+            color: var(--white);
+            padding: 3rem 0 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 100vh;
+                padding: 2rem 0;
+            }
+            
+            .section {
+                padding: 3rem 0;
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Estilos para embudo de ventas */
+        .urgency-badge {
+            background: var(--gradient-urgency);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: pulse 2s infinite;
+            display: inline-block;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .bonus-card {
+            background: linear-gradient(135deg, #fff 0%, #fef5e7 100%);
+            border: 3px solid var(--warning);
+            border-radius: 20px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .bonus-card::before {
+            content: 'BONO EXCLUSIVO';
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background: var(--accent);
+            color: white;
+            padding: 5px 40px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            transform: rotate(45deg);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .bonus-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--accent);
+        }
+        
+        .scarcity-timer {
+            background: var(--accent);
+            color: white;
+            padding: 1rem;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: 700;
+            margin: 1rem 0;
+            animation: flash 3s infinite;
+        }
+        
+        @keyframes flash {
+            0%, 50%, 100% { opacity: 1; }
+            25%, 75% { opacity: 0.8; }
+        }
+        
+        .price-strike {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .price-strike::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--accent);
+            animation: strike 0.5s ease-out;
+        }
+        
+        @keyframes strike {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        .social-proof {
+            background: var(--success);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+        
+        .funnel-cta {
+            background: var(--gradient-urgency);
+            color: white;
+            border: none;
+            padding: 1.5rem 3rem;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: var(--transition);
+            box-shadow: var(--shadow-xl);
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .funnel-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+        
+        .funnel-cta:hover::before {
+            left: 100%;
+        }
+        
+        .funnel-cta:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(255, 71, 87, 0.4);
+            color: white;
+        }
+        
+        .value-stacked {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .value-original {
+            font-size: 1.2rem;
+            color: var(--dark);
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+        
+        .value-current {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--accent);
+            position: relative;
+            top: -10px;
+        }
+        
+        .guarantee-seal {
+            width: 120px;
+            height: 120px;
+            border: 5px solid var(--success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            color: var(--success);
+            font-weight: 800;
+            text-align: center;
+            font-size: 0.9rem;
+            margin: 0 auto;
+            box-shadow: var(--shadow-lg);
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .bonus-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .bonus-list li {
+            background: var(--light);
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary);
+            position: relative;
+            transition: var(--transition);
+        }
+        
+        .bonus-list li:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .bonus-value {
+            background: var(--accent);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-left: 1rem;
+        }
+        
+        .floating-emoji {
+            position: absolute;
+            font-size: 2rem;
+            animation: float 3s ease-in-out infinite;
+            opacity: 0.8;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .countdown-box {
+            background: var(--dark);
+            color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-xl);
+            border: 3px solid var(--accent);
+        }
+        
+        .countdown-numbers {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .countdown-item {
+            background: var(--accent);
+            padding: 1rem;
+            border-radius: 10px;
+            min-width: 80px;
+        }
+        
+        .countdown-item span {
+            display: block;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        
+        .countdown-item small {
+            font-size: 0.8rem;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient(135deg, rgba(44, 62, 80, 0.95) 0%, rgba(32, 45, 58, 0.95) 100%); backdrop-filter: blur(10px);">
+    
+    <!-- Hero Section - Sin Menú, Directo de Venta -->
+    <section class="hero" id="inicio" style="background: linear-gradient(135deg, rgba(46, 49, 49, 0.85) 0%, rgba(44, 62, 80, 0.85) 100%), url('Imagenes/portada 2.png'); background-size: cover; background-position: center; background-attachment: fixed; min-height: 100vh; display: flex; align-items: center;">
         <div class="container">
-            <a class="navbar-brand fw-bold text-white fs-3" href="#">PreciosAlimentos</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#beneficios">Beneficios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#contenido">Contenido</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#testimonios">Testimonios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#preguntas">Preguntas</a>
-                    </li>
-                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a href="#oferta" class="btn btn-warning fw-bold">¡Quiero el Ebook!</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section with Gradient Background -->
-    <section class="py-5 py-lg-7 position-relative overflow-hidden" id="inicio" style="background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%);">
-        <!-- Decorative Elements -->
-        <div class="position-absolute top-0 end-0 w-100 h-100" style="background: url('Imagenes/portada 2.png') no-repeat right -100px top -100px; opacity: 0.1; z-index: 0;"></div>
-        <div class="position-absolute bottom-0 start-0 w-100 h-100" style="background: url('Imagenes/portada 1.png') no-repeat left -50px bottom -50px; opacity: 0.1; z-index: 0;"></div>
-        
-        <div class="container position-relative" style="z-index: 1;">
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0 text-white">
-                    <span class="badge bg-warning text-dark mb-3 px-3 py-2">¡NUEVA EDICIÓN 2025!</span>
-                    <h1 class="display-4 fw-bold mb-4">Domina el Arte de Fijar Precios en tu Negocio de Alimentos</h1>
-                    <p class="lead mb-4">Aprende estrategias comprobadas para maximizar tus ganancias sin perder clientes. ¡Incluye plantillas editables en Excel!</p>
-                    
-                    <div class="d-flex flex-wrap gap-4 mb-4">
-                        <div class="d-flex align-items-center">
-                            <div class="bg-white text-success rounded-circle d-flex align-items-center justify-content-center me-2" style="width: 28px; height: 28px;">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span>Métodos comprobados</span>
+                <div class="col-lg-6">
+                    <div class="hero-content fade-in">
+                        <div class="urgency-badge mb-4" style="background: #e74c3c; color: white; padding: 12px 20px; border-radius: 8px; font-weight: bold;">
+                            <i class="fas fa-fire me-2"></i>
+                            OFERTA 24 HORAS - SOLO $7.99
                         </div>
-                        <div class="d-flex align-items-center">
-                            <div class="bg-white text-success rounded-circle d-flex align-items-center justify-content-center me-2" style="width: 28px; height: 28px;">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span>Plantillas editables</span>
+                        <h1 class="display-4 fw-bold mb-4" style="color: white;">
+                            GANA MÁS DINERO<br>
+                            <span style="color: #f39c12;">APRENDE A PONER PRECIOS</span><br>
+                            A TU COMIDA HOY
+                        </h1>
+                        <p class="lead mb-4" style="color: #ecf0f1; font-size: 1.2rem;">
+                            Métodos exactos de restaurantes exitosos. 1,247 emprendedores ya duplican sus ganancias.
+                        </p>
+                        
+                        <!-- Alerta de Escasez -->
+                        <div class="alert alert-warning mb-4" role="alert" style="background: #f39c12; border: none; color: #2c3e50;">
+                            <h6 class="alert-heading" style="color: #2c3e50;">⚠️ ¡SOLO 7 PACKS RESTANTES!</h6>
+                            <small class="fw-bold">Se agotaron en 2 horas la última vez.</small>
                         </div>
-                    </div>
-                    
-                    <div class="bg-white bg-opacity-10 p-4 rounded-3 mb-4 border border-white border-opacity-10">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="d-flex">
-                                <img src="Imagenes/portada 2.webp" class="rounded-circle border border-3 border-warning" width="40" height="40" style="object-fit: cover;" alt="Cliente">
-                            </div>
-                            <div class="ms-3">
-                                <div class="d-flex align-items-center">
-                                    <div class="text-warning me-2">★★★★★</div>
-                                    <span class="small">+1,200 emprendedores satisfechos</span>
+                        
+                        <!-- Contador Regresivo -->
+                        <div class="countdown-box mb-4" style="background: #2c3e50; border: 2px solid #f39c12;">
+                            <h5 class="mb-3" style="color: #f39c12;">⏰ OFERTA TERMINA EN:</h5>
+                            <div class="countdown-numbers">
+                                <div class="countdown-item" style="background: #f39c12; color: #2c3e50;">
+                                    <span id="hero-hours">23</span>
+                                    <small>HRS</small>
+                                </div>
+                                <div class="countdown-item" style="background: #f39c12; color: #2c3e50;">
+                                    <span id="hero-minutes">59</span>
+                                    <small>MIN</small>
+                                </div>
+                                <div class="countdown-item" style="background: #f39c12; color: #2c3e50;">
+                                    <span id="hero-seconds">59</span>
+                                    <small>SEG</small>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="countdown-container bg-dark bg-opacity-50 p-3 rounded-2 text-center">
-                            <p class="mb-2 fw-bold text-warning">¡Oferta por tiempo limitado!</p>
-                            <div class="d-flex justify-content-center gap-2" id="countdown">
-                                <div class="text-center px-2">
-                                    <div class="bg-white bg-opacity-20 text-white p-2 rounded-2 fw-bold" style="min-width: 50px;">12</div>
-                                    <small class="text-white-50">Horas</small>
+                        <!-- Prueba Social -->
+                        <div class="social-proof mb-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <span style="color: #e74c3c; margin-right: 10px;">🔥</span>
+                                <span style="color: white;"><strong>1,247 clientes</strong> compraron esta semana</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <span style="color: #f39c12; margin-right: 10px;">⭐</span>
+                                <span style="color: white;"><strong>4.9/5 estrellas</strong> de calificación</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span style="color: #27ae60; margin-right: 10px;">💰</span>
+                                <span style="color: white;"><strong>98% duplicó</strong> sus ganancias</span>
+                            </div>
+                        </div>
+                        
+                        <!-- CTA Principal -->
+                        <div class="hero-cta">
+                            <a href="#beneficios" class="funnel-cta btn-lg" style="background: #e74c3c; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: inline-block;">
+                                <i class="fas fa-shopping-cart me-2"></i>
+                                ¡QUIERO MI PACK POR $7.99!
+                            </a>
+                            <div class="mt-3">
+                                <small style="color: #bdc3c7;">
+                                    <i class="fas fa-lock me-1"></i> 
+                                    Pago seguro • Garantía 7 días • Acceso inmediato
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image fade-in text-center">
+                        <img src="Imagenes/portada 1.png" alt="Ebook Principal" class="img-fluid rounded shadow-lg mb-4" style="max-height: 300px;">
+                        <div class="d-flex justify-content-center gap-2">
+                            <img src="Imagenes/BONO 1.png" alt="Bono 1" class="img-fluid rounded shadow" style="max-height: 120px;">
+                            <img src="Imagenes/Bono 2.png" alt="Bono 2" class="img-fluid rounded shadow" style="max-height: 120px;">
+                            <img src="Imagenes/Bono 3.jpeg" alt="Bono 3" class="img-fluid rounded shadow" style="max-height: 120px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PRODUCTOS -->
+    <section class="section" id="beneficios" style="background: #f8f9fa; padding: 60px 0;">
+        <div class="container">
+            <div class="text-center mb-5 fade-in">
+                <div class="urgency-badge mb-3" style="background: #e74c3c; color: white; padding: 10px 20px; border-radius: 8px; font-weight: bold; display: inline-block;">
+                    🎁 3 BONOS EXCLUSIVOS HOY 🎁
+                </div>
+                <h2 class="display-5 fw-bold mb-3" style="color: #2c3e50;">RECIBE ESTE PACK COMPLETO</h2>
+                <p class="lead" style="color: #7f8c8d;">Todo lo que necesitas para ganar dinero con tu negocio de comida</p>
+            </div>
+            
+            <!-- Ebook Principal -->
+            <div class="row mb-4">
+                <div class="col-lg-12 fade-in">
+                    <div class="bonus-card" style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-center">
+                                <img src="Imagenes/portada 1.png" alt="Ebook Principal" class="img-fluid rounded shadow-lg" style="max-height: 250px;">
+                            </div>
+                            <div class="col-lg-5">
+                                <h3 class="h3 fw-bold mb-3" style="color: #2c3e50;">📚 EBOOK PRINCIPAL</h3>
+                                <h4 class="h5 mb-3" style="color: #e74c3c;">"Aprende a Poner Precio a los Alimentos"</h4>
+                                <p class="mb-3 fw-bold" style="color: #34495e;">La guía que ha transformado más de 1,247 negocios de comida.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Métodos exactos</strong> para calcular precios</li>
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Casos reales</strong> de negocios exitosos</li>
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Plantillas listas</strong> para usar hoy</li>
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Duplica ganancias</strong> en 30 días</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 text-center">
+                                <div class="value-stacked">
+                                    <div class="value-original" style="color: #7f8c8d; text-decoration: line-through;">$47.00</div>
+                                    <div class="value-current" style="color: #e74c3c; font-size: 2.5rem; font-weight: bold;">$7.99</div>
                                 </div>
-                                <div class="text-center px-2">
-                                    <div class="bg-white bg-opacity-20 text-white p-2 rounded-2 fw-bold" style="min-width: 50px;">00</div>
-                                    <small class="text-white-50">Minutos</small>
-                                </div>
-                                <div class="text-center px-2">
-                                    <div class="bg-white bg-opacity-20 text-white p-2 rounded-2 fw-bold" style="min-width: 50px;">00</div>
-                                    <small class="text-white-50">Segundos</small>
+                                <div class="mt-3">
+                                    <span class="badge fs-6" style="background: #27ae60; color: white;">83% OFF</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <a href="#oferta" class="btn btn-warning btn-lg w-100 py-3 fw-bold mb-3 shadow-lg hover-lift">
-                        <i class="fas fa-shopping-cart me-2"></i> QUIERO EL EBOOK AHORA
-                    </a>
-                    
-                    <div class="text-center">
-                        <div class="d-inline-flex align-items-center bg-white bg-opacity-10 p-2 px-3 rounded-pill">
-                            <i class="fas fa-shield-alt text-warning me-2"></i>
-                            <small class="text-white-50">Pago seguro · Garantía de 30 días</small>
+                </div>
+            </div>
+            
+            <!-- BONO 1 -->
+            <div class="row mb-4">
+                <div class="col-lg-12 fade-in">
+                    <div class="bonus-card" style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-center">
+                                <img src="Imagenes/BONO 1.png" alt="Bono 1" class="img-fluid rounded shadow-lg" style="max-height: 250px;">
+                            </div>
+                            <div class="col-lg-5">
+                                <h3 class="h3 fw-bold mb-3" style="color: #2c3e50;">🎯 BONO #1: ESCALANDO TU NEGOCIO</h3>
+                                <p class="mb-3 fw-bold" style="color: #34495e;">De comida casera a restaurante - Guía paso a paso.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Paso a paso</strong> para crecer tu negocio</li>
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Evita errores</strong> al expandir</li>
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Estrategias probadas</strong> de crecimiento</li>
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Caso de estudio</strong> real y exitoso</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 text-center">
+                                <div class="value-stacked">
+                                    <div class="value-original" style="color: #7f8c8d; text-decoration: line-through;">$37.00</div>
+                                    <div class="value-current" style="color: #27ae60; font-size: 2.5rem; font-weight: bold;">GRATIS</div>
+                                </div>
+                                <div class="mt-3">
+                                    <span class="badge fs-6" style="background: #f39c12; color: white;">BONO EXCLUSIVO</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            
+            <!-- BONO 2 -->
+            <div class="row mb-4">
+                <div class="col-lg-12 fade-in">
+                    <div class="bonus-card" style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-center">
+                                <img src="Imagenes/Bono 2.png" alt="Bono 2" class="img-fluid rounded shadow-lg" style="max-height: 250px;">
+                            </div>
+                            <div class="col-lg-5">
+                                <h3 class="h3 fw-bold mb-3" style="color: #2c3e50;">🎥 BONO #2: EVITA LOS 7 ERRORES</h3>
+                                <p class="mb-3 fw-bold" style="color: #34495e;">Cómo evitar los 7 errores que hacen quebrar negocios de comida.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Los 7 errores fatales</strong> que destruyen negocios</li>
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Cómo detectarlos</strong> a tiempo</li>
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Soluciones prácticas</strong> y rápidas</li>
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Ahorra miles</strong> en errores costosos</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 text-center">
+                                <div class="value-stacked">
+                                    <div class="value-original" style="color: #7f8c8d; text-decoration: line-through;">$27.00</div>
+                                    <div class="value-current" style="color: #27ae60; font-size: 2.5rem; font-weight: bold;">GRATIS</div>
+                                </div>
+                                <div class="mt-3">
+                                    <span class="badge fs-6" style="background: #f39c12; color: white;">BONO EXCLUSIVO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- BONO 3 -->
+            <div class="row mb-4">
+                <div class="col-lg-12 fade-in">
+                    <div class="bonus-card" style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-center">
+                                <img src="Imagenes/Bono 3.jpeg" alt="Bono 3" class="img-fluid rounded shadow-lg" style="max-height: 250px;">
+                            </div>
+                            <div class="col-lg-5">
+                                <h3 class="h3 fw-bold mb-3" style="color: #2c3e50;">🎯 BONO #3: TRUCO PSICOLÓGICO</h3>
+                                <p class="mb-3 fw-bold" style="color: #34495e;">El truco psicológico para que tus clientes compren más.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Técnicas probadas</strong> de psicología</li>
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Aumenta ventas</strong> sin cambiar precios</li>
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Clientes más felices</strong> que gastan más</li>
+                                    <li class="mb-2" style="color: #2c3e50;"><i class="fas fa-check me-2" style="color: #27ae60;"></i> <strong>Fácil de aplicar</strong> desde hoy mismo</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 text-center">
+                                <div class="value-stacked">
+                                    <div class="value-original" style="color: #7f8c8d; text-decoration: line-through;">$17.00</div>
+                                    <div class="value-current" style="color: #27ae60; font-size: 2.5rem; font-weight: bold;">GRATIS</div>
+                                </div>
+                                <div class="mt-3">
+                                    <span class="badge fs-6" style="background: #f39c12; color: white;">BONO EXCLUSIVO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Resumen de Venta -->
+            <div class="text-center fade-in">
+                <div class="alert alert-success" role="alert" style="background: #27ae60; border: none; color: white;">
+                    <h4 class="alert-heading" style="color: white;">💰 VALOR TOTAL DEL PACK: $128.00</h4>
+                    <p class="mb-0" style="color: white;">Precio hoy: <span style="font-size: 3rem; font-weight: bold; color: #fff;">$7.99</span></p>
+                    <small class="fw-bold" style="color: white;">¡Ahorro de $120.01 (94% OFF)! 💥</small>
                 </div>
                 
-                <div class="col-lg-6 position-relative">
-                    <div class="position-relative">
-                        <div class="position-relative" style="transform-style: preserve-3d;">
-                            <img src="Imagenes/portada 1.png" alt="Portada del Ebook" class="img-fluid rounded-4 shadow-lg position-relative" style="z-index: 2; transform: rotateY(5deg) rotateX(5deg);">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-warning rounded-4" style="transform: translateZ(-10px) translateY(10px) translateX(-10px); z-index: 1; opacity: 0.5;"></div>
+                <!-- Contador de Urgencia -->
+                <div class="countdown-box mb-4" style="background: #2c3e50; border: 2px solid #e74c3c;">
+                    <h5 class="mb-3" style="color: #e74c3c;">⏰ OFERTA TERMINA EN:</h5>
+                    <div class="countdown-numbers justify-content-center">
+                        <div class="countdown-item" style="background: #e74c3c; color: white;">
+                            <span id="bonus-hours">23</span>
+                            <small>HRS</small>
                         </div>
-                        
-                        <div class="position-absolute top-0 start-0 translate-middle bg-warning text-dark fw-bold px-3 py-2 rounded-pill shadow" style="transform: rotate(-10deg); z-index: 3;">
-                            <i class="fas fa-star me-1"></i> MÁS VENDIDO
+                        <div class="countdown-item" style="background: #e74c3c; color: white;">
+                            <span id="bonus-minutes">59</span>
+                            <small>MIN</small>
                         </div>
-                        
-                        <div class="text-center mt-4">
-                            <div class="d-flex justify-content-center gap-3">
-                                <div class="text-center">
-                                    <div class="bg-primary text-white d-inline-flex align-items-center justify-content-center rounded-circle mb-2 shadow" style="width: 50px; height: 50px;">
-                                        <i class="fas fa-file-pdf fs-4"></i>
-                                    </div>
-                                    <div class="small text-white">PDF Descargable</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="bg-success text-white d-inline-flex align-items-center justify-content-center rounded-circle mb-2 shadow" style="width: 50px; height: 50px;">
-                                        <i class="fas fa-file-excel fs-4"></i>
-                                    </div>
-                                    <div class="small text-white">Plantillas en Excel</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="bg-info text-white d-inline-flex align-items-center justify-content-center rounded-circle mb-2 shadow" style="width: 50px; height: 50px;">
-                                        <i class="fas fa-headset fs-4"></i>
-                                    </div>
-                                    <div class="small text-white">Soporte 24/7</div>
-                                </div>
-                            </div>
+                        <div class="countdown-item" style="background: #e74c3c; color: white;">
+                            <span id="bonus-seconds">59</span>
+                            <small>SEG</small>
                         </div>
                     </div>
+                    <small style="color: #e74c3c;">⚠️ Después el precio sube a $47.00</small>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Notification Popup -->
-    <div id="notification" class="notification">
-        <div class="notification-content">
-            <img src="Imagenes/user1.jpg" alt="Usuario" class="notification-avatar">
-            <div class="notification-text">
-                <strong>María de Lima</strong> acaba de ACCEDER al ebook
-                <span class="notification-time">Hace 2 minutos</span>
-            </div>
-        </div>
-        <button id="close-notification" class="close-notification">&times;</button>
-    </div>
-
-    <!-- Problem Section -->
-    <section class="problem">
-        <div class="container">
-            <h2>¿Estás Perdiendo Dinero por No Saber Cuánto Cobrar?</h2>
-            <p>Si estás aquí, probablemente te has preguntado alguna vez:</p>
-            <ul class="problem-list">
-                <li>¿Cómo sé si estoy cobrando lo justo por mis productos?</li>
-                <li>¿Por qué no tengo las ganancias que esperaba a fin de mes?</li>
-                <li>¿Cómo puedo competir sin regalar mi trabajo?</li>
-            </ul>
-            <p>No eres el único. Muchos emprendedores de alimentos cometen el error de no calcular correctamente sus precios, lo que les hace perder dinero en cada venta.</p>
-        </div>
-    </section>
-
-    <!-- Agitation Section -->
-    <section class="agitation">
-        <div class="container">
-            <h2>El Error que Está Costándote Dinero</h2>
-            <div class="agitation-grid">
-                <div class="agitation-item">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <h3>Pérdidas Invisibles</h3>
-                    <p>Por cada producto que vendes sin calcular bien el precio, podrías estar perdiendo hasta un 40% de tus ganancias potenciales.</p>
+                
+                <!-- Alerta de Escasez -->
+                <div class="scarcity-timer mb-4" style="background: #e74c3c; color: white; padding: 15px; border-radius: 8px; font-weight: bold;">
+                    <i class="fas fa-fire me-2"></i>
+                    ⚠️ ¡SOLO QUEDAN 7 PACKS! ⚠️
                 </div>
-                <div class="agitation-item">
-                    <i class="fas fa-clock"></i>
-                    <h3>Tiempo Mal Invertido</h3>
-                    <p>Horas de trabajo que no se ven reflejadas en tus ingresos porque no estás cobrando lo justo por tu tiempo.</p>
-                </div>
-                <div class="agitation-item">
-                    <i class="fas fa-chart-line-down"></i>
-                    <h3>Crecimiento Estancado</h3>
-                    <p>Sin ganancias reales, es imposible hacer crecer tu negocio como mereces.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section class="solution">
-        <div class="container">
-            <h2>La Solución que Cambiará tu Negocio</h2>
-            <div class="solution-content">
-                <div class="solution-text">
-                    <p>Te presento el ebook <strong>"APRENDE A PONER PRECIO A LOS ALIMENTOS"</strong>, una guía completa que te enseñará paso a paso cómo fijar precios que te permitan ganar lo que mereces.</p>
-                    <p>Con este método probado, podrás:</p>
-                    <ul class="solution-list">
-                        <li><i class="fas fa-check"></i> Calcular el costo real de tus productos</li>
-                        <li><i class="fas fa-check"></i> Identificar costos ocultos que están afectando tus ganancias</li>
-                        <li><i class="fas fa-check"></i> Fijar precios competitivos sin regalar tu trabajo</li>
-                        <li><i class="fas fa-check"></i> Aumentar tus ganancias desde la primera venta</li>
-                    </ul>
-                </div>
-                <div class="solution-image">
-                    <div class="ebook-showcase">
-                        <img src="Imagenes/portada 1.png" alt="Vista previa del ebook" loading="lazy" class="ebook-preview">
-                        <div class="ebook-highlights">
-                            <div class="highlight"><i class="fas fa-check-circle"></i> Guía completa</div>
-                            <div class="highlight"><i class="fas fa-check-circle"></i> Plantillas incluidas</div>
-                            <div class="highlight"><i class="fas fa-check-circle"></i> Acceso inmediato</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits">
-        <div class="container">
-            <h2>Beneficios Clave</h2>
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <i class="fas fa-calculator"></i>
-                    <h3>Fórmulas Comprobadas</h3>
-                    <p>Aprende el método exacto para calcular precios que maximizan tus ganancias.</p>
-                </div>
-                <div class="benefit-item">
-                    <i class="fas fa-clock"></i>
-                    <h3>Ahorra Tiempo</h3>
-                    <p>Deja de adivinar y sigue un proceso claro y sencillo.</p>
-                </div>
-                <div class="benefit-item">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Mayores Ganancias</h3>
-                    <p>Descubre cómo aumentar tus márgenes de beneficio de forma ética.</p>
-                </div>
-                <div class="benefit-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Sin Riesgo</h3>
-                    <p>Garantía de devolución de 30 días si no quedas satisfecho.</p>
-                </div>
-                <div class="benefit-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Acceso Inmediato</h3>
-                    <p>Accede al material en cualquier dispositivo, en cualquier momento.</p>
-                </div>
-                <div class="benefit-item">
-                    <i class="fas fa-gift"></i>
-                    <h3>Bono Especial</h3>
-                    <p>Recibe de regalo la guía "Escalando tu negocio" al acceder hoy.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Content Section -->
-    <section class="content">
-        <div class="container">
-            <h2>¿Qué Encontrarás en el Ebook?</h2>
-            <div class="module">
-                <h3><span class="emoji">🔹</span> Módulo 1: Introducción a la fijación de precios en alimentos <span class="emoji">🍽️💡</span></h3>
-                <ul>
-                    <li>❓ ¿Por qué es tan importante fijar el precio correcto?</li>
-                    <li>🧠 Mitos comunes al fijar precios en gastronomía.</li>
-                    <li>📉 Casos reales de pérdidas por no calcular bien.</li>
-                </ul>
-            </div>
-            
-            <div class="module">
-                <h3><span class="emoji">🔹</span> Módulo 2: Conoce tu producto a fondo <span class="emoji">🥦📝</span></h3>
-                <ul>
-                    <li>🧾 Cómo desglosar ingredientes y cantidades exactas.</li>
-                    <li>🛠️ Herramientas para registrar tus recetas con precisión.</li>
-                    <li>🌍 El impacto de la calidad y origen del insumo.</li>
-                </ul>
-            </div>
-            
-            <!-- Add more modules following the same pattern -->
-            
-            <div class="cta-container">
-                <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10" class="cta-button">
-                    <i class="fas fa-lock"></i> QUIERO ACCEDER AL EBOOK AHORA
+                
+                <!-- CTA Directo -->
+                <a href="#oferta" class="btn-lg" style="background: #e74c3c; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: inline-block;">
+                    <i class="fas fa-shopping-cart me-2"></i>
+                    ¡QUIERO EL PACK COMPLETO POR $7.99!
                 </a>
+                
+                <div class="mt-3">
+                    <small style="color: #7f8c8d;"><i class="fas fa-lock me-2"></i> Pago seguro • Garantía 7 días • Acceso inmediato</small>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
+    <!-- SECCIÓN DE TESTIMONIOS -->
+    <section class="section" id="testimonios" style="background: #ffffff; padding: 60px 0;">
         <div class="container">
-            <h2>Lo que dicen nuestros clientes</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <div class="testimonial-avatar">
-                    <i class="fas fa-user-circle"></i>
+            <div class="text-center mb-5 fade-in">
+                <h3 class="display-6 fw-bold mb-3" style="color: #2c3e50;">🔥 RESULTADOS REALES DE CLIENTES 🔥</h3>
+                <p class="lead" style="color: #7f8c8d;">Emprendedores como tú ya están duplicando sus ganancias</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 fade-in">
+                    <div class="testimonial-card" style="background: white; border-radius: 12px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-left: 4px solid #e74c3c;">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://picsum.photos/seed/portrait-woman-smiling/250/250.jpg" alt="María González" class="rounded-circle me-3" style="width: 250px; height: 250px; object-fit: cover; border: 3px solid #e74c3c;">
+                            <div>
+                                <h6 class="mb-0 fw-bold" style="color: #2c3e50;">María González</h6>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <small style="color: #7f8c8d;">Panadería</small>
+                            </div>
+                        </div>
+                        <p class="mb-0" style="color: #34495e;"><strong>"Aumenté mis ganancias 40% el primer mes. Las estrategias funcionan."</strong></p>
+                    </div>
                 </div>
-                        <p>"Gracias a este ebook pude aumentar mis precios un 30% sin perder clientes. ¡Mis ganancias se han duplicado!"</p>
-                        <div class="testimonial-author">
-                            <strong>Ana M.</strong>
-                            <span>Dueña de panadería</span>
+                <div class="col-lg-4 fade-in">
+                    <div class="testimonial-card" style="background: white; border-radius: 12px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-left: 4px solid #f39c12;">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://picsum.photos/seed/portrait-man-professional/250/250.jpg" alt="Carlos Martínez" class="rounded-circle me-3" style="width: 250px; height: 250px; object-fit: cover; border: 3px solid #f39c12;">
+                            <div>
+                                <h6 class="mb-0 fw-bold" style="color: #2c3e50;">Carlos Martínez</h6>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <small style="color: #7f8c8d;">Restaurante</small>
+                            </div>
+                        </div>
+                        <p class="mb-0" style="color: #34495e;"><strong>"La mejor inversión. Las plantillas me ahorraron horas y mis ganancias se duplicaron."</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 fade-in">
+                    <div class="testimonial-card" style="background: white; border-radius: 12px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-left: 4px solid #27ae60;">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://picsum.photos/seed/portrait-woman-happy/250/250.jpg" alt="Ana López" class="rounded-circle me-3" style="width: 250px; height: 250px; object-fit: cover; border: 3px solid #27ae60;">
+                            <div>
+                                <h6 class="mb-0 fw-bold" style="color: #2c3e50;">Ana López</h6>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <small style="color: #7f8c8d;">Cafetería</small>
+                            </div>
+                        </div>
+                        <p class="mb-0" style="color: #34495e;"><strong>"Ahora tengo confianza para fijar precios. Mis clientes pagan felices y yo gano más."</strong></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ebook Visual Showcase -->
+            <div class="text-center mt-5 fade-in">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 20px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                            <h4 class="mb-4" style="color: #2c3e50; font-weight: bold;">📚 EL EBOOK QUE ESTÁ TRANSFORMANDO NEGOCIOS</h4>
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <img src="Imagenes/portada 3.webp" alt="Ebook Completo" class="img-fluid rounded shadow-lg" style="max-height: 300px;">
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="mb-3" style="color: #e74c3c;">"Aprende a Poner Precio a los Alimentos"</h5>
+                                    <p style="color: #34495e; font-weight: 500;">La guía definitiva con métodos probados que han transformado más de 1,247 negocios de comida en todo el mundo.</p>
+                                                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Add more testimonials -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Offer Section -->
-    <section class="offer">
-        <div class="container">
-            <h2>Oferta Especial por Tiempo Limitado</h2>
-            <div class="offer-content">
-                <div class="offer-item main-offer">
-                    <h3>Ebook "Aprende a Poner Precio a los Alimentos"</h3>
-                    <div class="price">
-                        <span class="original-price">$29.99</span>
-                        <span class="current-price">$9.99 USD</span>
-                    </div>
-                    <ul class="offer-features">
-                        <li><i class="fas fa-check"></i> Guía completa de fijación de precios</li>
-                        <li><i class="fas fa-check"></i> Plantillas descargables</li>
-                        <li><i class="fas fa-check"></i> Acceso de por vida</li>
-                        <li><i class="fas fa-check"></i> Actualizaciones gratuitas</li>
-                    </ul>
-                </div>
-                
-                <div class="offer-bonus">
-                    <h3>Bono Especial (GRATIS)</h3>
-                    <p>"Escalando tu negocio: de comida casera a restaurante"</p>
-                    <p class="bonus-value">Valor: $19.99</p>
-                </div>
-                
-                <div class="order-bump">
-                    <label class="checkbox-container">
-                        <input type="checkbox" checked>
-                        <span class="checkmark"></span>
-                        <span class="order-bump-text">Sí, quiero agregar "Pasteles Saludables y Deliciosos SIN GLUTEN" por solo <strong>$4.99 más</strong> (¡Ahorro del 50%!)</span>
-                    </label>
-                </div>
-                
-                <div class="cta-container">
-                    <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10" class="cta-button">
-                        <i class="fas fa-lock"></i> QUIERO ACCEDER AL EBOOK AHORA
-                    </a>
-                    <div class="secure-checkout">
-                        <i class="fas fa-lock"></i> Pago seguro - 256-bit SSL
-                    </div>
-                </div>
-                
-                <div class="guarantee-badge">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>Garantía de 30 días - Sin preguntas</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq">
-        <div class="container">
-            <h2>Preguntas Frecuentes</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>¿Cómo recibo el material?<span class="faq-toggle">+</span></h3>
-                    <div class="faq-answer">
-                        <p>Recibirás acceso inmediato al área de miembros después de confirmarse tu pago. Podrás acceder desde cualquier dispositivo con conexión a internet.</p>
-                    </div>
-                </div>
-                <!-- Add more FAQ items -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class="final-cta">
-        <div class="container">
-            <h2>No dejes que la indecisión te cueste dinero</h2>
-            <p>Comienza hoy mismo a fijar precios que reflejen el valor de tu trabajo y te permitan crecer.</p>
-            
-            <div class="countdown-container">
-                <p class="countdown-text">La promoción termina en:</p>
-                <div id="countdown2" class="countdown">
-                    <div class="countdown-item">
-                        <span id="hours2">12</span>
-                        <span>Horas</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="minutes2">00</span>
-                        <span>Minutos</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="seconds2">00</span>
-                        <span>Segundos</span>
-                    </div>
-                </div>
             </div>
             
-            <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10" class="cta-button">
-                <i class="fas fa-lock"></i> QUIERO ACCEDER AL EBOOK AHORA
-            </a>
+            <!-- Prueba Social Directa -->
+            <div class="text-center mt-4 fade-in">
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <span style="background: #e74c3c; color: white; padding: 8px 16px; border-radius: 20px; font-weight: bold;">✅ 1,247+ Clientes</span>
+                    <span style="background: #f39c12; color: white; padding: 8px 16px; border-radius: 20px; font-weight: bold;">⭐ 4.9/5 Estrellas</span>
+                    <span style="background: #27ae60; color: white; padding: 8px 16px; border-radius: 20px; font-weight: bold;">🔥 98% Éxito</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    
+    <!-- SECCIÓN FINAL DE VENTA DIRECTA -->
+    <section class="section section-dark" id="oferta" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);">
+        <div class="container">
+            <!-- Alerta de Urgencia -->
+            <div class="text-center mb-4 fade-in">
+                <div class="scarcity-timer" style="background: var(--gradient-urgency); font-size: 1.1rem; padding: 1rem;">
+                    <i class="fas fa-fire me-2"></i>
+                    ⚠️ ¡SOLO 7 PACKS RESTANTES! ⚠️
+                </div>
+                
+                <h2 class="display-5 fw-bold mb-3 text-white">
+                    🎯 ¡OBTÉN TU PACK AHORA O PAGARÁS $47 DESPUÉS! 🎯
+                </h2>
+            </div>
+            
+            <!-- Oferta Directa -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-10 fade-in">
+                    <div class="pricing-card" style="background: linear-gradient(135deg, #fff 0%, #fef5e7 100%); border: 5px solid var(--accent);">
+                        <!-- Header -->
+                        <div class="text-center p-3" style="background: #e74c3c; border-radius: 15px 15px 0 0;">
+                            <h3 class="fw-bold mb-0" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">🔥 PACK COMPLETO - NEGOCIO DE COMIDA 🔥</h3>
+                        </div>
+                        
+                        <div class="p-4">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7">
+                                    <!-- Resumen de lo que recibe -->
+                                    <h4 class="h4 fw-bold mb-3" style="color: #2c3e50;">📦 RECIBIRÁS HOY:</h4>
+                                    <div class="bonus-list" style="list-style: none; padding: 0;">
+                                        <li style="background: #f8f9fa; margin: 10px 0; padding: 15px; border-radius: 8px; border-left: 4px solid #e74c3c;">
+                                            <i class="fas fa-book me-2" style="color: #e74c3c;"></i>
+                                            <strong style="color: #2c3e50;">Ebook Principal</strong> - Aprende a Poner Precio a los Alimentos
+                                            <span style="background: #e74c3c; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.8rem; margin-left: 10px; text-decoration: line-through;">$47</span>
+                                        </li>
+                                        <li style="background: #f8f9fa; margin: 10px 0; padding: 15px; border-radius: 8px; border-left: 4px solid #f39c12;">
+                                            <i class="fas fa-chart-line me-2" style="color: #f39c12;"></i>
+                                            <strong style="color: #2c3e50;">Bono 1: Escalando tu Negocio</strong> - De comida casera a restaurante
+                                            <span style="background: #f39c12; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.8rem; margin-left: 10px; text-decoration: line-through;">$37</span>
+                                        </li>
+                                        <li style="background: #f8f9fa; margin: 10px 0; padding: 15px; border-radius: 8px; border-left: 4px solid #27ae60;">
+                                            <i class="fas fa-exclamation-triangle me-2" style="color: #27ae60;"></i>
+                                            <strong style="color: #2c3e50;">Bono 2: Evita los 7 Errores</strong> - Que hacen quebrar negocios
+                                            <span style="background: #27ae60; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.8rem; margin-left: 10px; text-decoration: line-through;">$27</span>
+                                        </li>
+                                        <li style="background: #f8f9fa; margin: 10px 0; padding: 15px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                            <i class="fas fa-brain me-2" style="color: #3498db;"></i>
+                                            <strong style="color: #2c3e50;">Bono 3: Truco Psicológico</strong> - Para que tus clientes compren más
+                                            <span style="background: #3498db; color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.8rem; margin-left: 10px; text-decoration: line-through;">$17</span>
+                                        </li>
+                                    </div>
+                                    
+                                    <!-- Precio vs Valor -->
+                                    <div class="alert alert-success mt-3" style="background: #27ae60; border: none; color: white;">
+                                        <h5 class="fw-bold" style="color: white;">💰 VALOR TOTAL: $128.00</h5>
+                                        <p class="mb-0" style="color: white;">Precio hoy: <span style="font-size: 2.5rem; font-weight: bold; color: #fff;">$7.99</span></p>
+                                        <small class="fw-bold" style="color: white;">¡Ahorro de $120.01! 💥</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-5">
+                                    <!-- Imágenes de los productos -->
+                                    <div class="text-center mb-3">
+                                        <img src="Imagenes/portada 1.png" alt="Ebook" class="img-fluid rounded mb-2" style="max-height: 100px;">
+                                        <div class="d-flex gap-1 justify-content-center">
+                                            <img src="Imagenes/BONO 1.png" alt="Bono 1" class="img-fluid rounded" style="max-height: 60px;">
+                                            <img src="Imagenes/Bono 2.png" alt="Bono 2" class="img-fluid rounded" style="max-height: 60px;">
+                                            <img src="Imagenes/Bono 3.jpeg" alt="Bono 3" class="img-fluid rounded" style="max-height: 60px;">
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Contador -->
+                                    <div class="countdown-box mb-3" style="background: #2c3e50; border: 2px solid #e74c3c; padding: 20px; border-radius: 12px;">
+                                        <h6 class="mb-2" style="color: #e74c3c; font-weight: bold;">⏰ OFERTA TERMINA EN:</h6>
+                                        <div class="countdown-numbers justify-content-center">
+                                            <div class="countdown-item" style="background: #e74c3c; color: white; padding: 10px; border-radius: 8px; margin: 0 5px;">
+                                                <span id="final-hours" style="font-size: 1.5rem; font-weight: bold;">23</span>
+                                                <small style="display: block; font-size: 0.7rem;">HRS</small>
+                                            </div>
+                                            <div class="countdown-item" style="background: #e74c3c; color: white; padding: 10px; border-radius: 8px; margin: 0 5px;">
+                                                <span id="final-minutes" style="font-size: 1.5rem; font-weight: bold;">59</span>
+                                                <small style="display: block; font-size: 0.7rem;">MIN</small>
+                                            </div>
+                                            <div class="countdown-item" style="background: #e74c3c; color: white; padding: 10px; border-radius: 8px; margin: 0 5px;">
+                                                <span id="final-seconds" style="font-size: 1.5rem; font-weight: bold;">59</span>
+                                                <small style="display: block; font-size: 0.7rem;">SEG</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Botón de Compra -->
+                                    <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10" style="background: #e74c3c; color: white; padding: 15px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: block; text-align: center; margin-bottom: 15px;" target="_blank">
+                                        <i class="fas fa-shopping-cart me-2"></i>
+                                        ¡COMPRAR AHORA POR $7.99!
+                                    </a>
+                                    
+                                    <!-- Seguridad -->
+                                    <div class="text-center mt-2">
+                                        <small style="color: #7f8c8d;"><i class="fas fa-lock me-1"></i> Pago seguro • Garantía 7 días</small>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Garantías -->
+                            <div class="row mt-3 pt-3 border-top text-center">
+                                <div class="col-4">
+                                    <div class="guarantee-seal" style="width: 80px; height: 80px; font-size: 0.7rem;">
+                                        7 DÍAS<br>DE<br>GARANTÍA
+                                    </div>
+                                    <small>Garantía Total</small>
+                                </div>
+                                <div class="col-4">
+                                    <div class="feature-icon mx-auto mb-2" style="width: 50px; height: 50px; font-size: 1rem; background: var(--gradient-2);">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <small>Acceso Instantáneo</small>
+                                </div>
+                                <div class="col-4">
+                                    <div class="feature-icon mx-auto mb-2" style="width: 50px; height: 50px; font-size: 1rem; background: var(--gradient-3);">
+                                        <i class="fas fa-infinity"></i>
+                                    </div>
+                                    <small>Acceso de Por Vida</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Última Alerta -->
+            <div class="text-center fade-in">
+                <div class="alert alert-danger" role="alert">
+                    <h5 class="alert-heading">⚠️ ¡ÚLTIMA OPORTUNIDAD! ⚠️</h5>
+                    <p class="mb-0 fw-bold">Cuando las 7 copias se vendan, esta oferta desaparece para siempre.</p>
+                </div>
+                
+                <!-- CTA Final -->
+                <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10" class="funnel-cta" target="_blank">
+                    <i class="fas fa-rocket me-2"></i>
+                    ¡QUIERO MI PACK POR $7.99!
+                </a>
+                
+                <div class="text-white mt-2">
+                    <small><i class="fas fa-users me-1"></i> 1,247 clientes felices • <i class="fas fa-star me-1"></i> 4.9/5 estrellas</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Moderno -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Aprende a Poner Precio</h3>
-                    <p>Tu guía definitiva para fijar precios rentables</p>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h4 class="fw-bold mb-3">
+                        <i class="fas fa-utensils me-2"></i>PreciosAlimentos
+                    </h4>
+                    <p class="mb-3">La guía definitiva para fijar precios rentables en tu negocio de alimentos y maximizar tus ganancias.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-whatsapp"></i></a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <a href="#">Términos de Servicio</a>
-                    <a href="#">Política de Privacidad</a>
-                    <a href="#">Contacto</a>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Enlaces</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#inicio" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="#beneficios" class="text-white-50 text-decoration-none">Beneficios</a></li>
+                        <li class="mb-2"><a href="#ebook" class="text-white-50 text-decoration-none">Ebook</a></li>
+                        <li class="mb-2"><a href="#testimonios" class="text-white-50 text-decoration-none">Testimonios</a></li>
+                    </ul>
                 </div>
-                <div class="footer-disclaimer">
-                    <p>© 2025 Aprende a Poner Precio. Todos los derechos reservados.</p>
-                    <p>Este sitio no es parte de Facebook o Facebook Inc. Además, este sitio NO está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc.</p>
-                    <p>Los resultados pueden variar según el esfuerzo y dedicación de cada persona. No garantizamos resultados específicos.</p>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Términos y Condiciones</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Política de Privacidad</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Política de Reembolso</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Aviso Legal</a></li>
+                    </ul>
+                </div>
+                            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0 small">&copy; 2026 PreciosAlimentos. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 small">Diseñado con <i class="fas fa-heart text-danger"></i> para emprendedores apasionados</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    
     <!-- Scripts -->
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Sistema de contadores múltiples
+        function updateAllCountdowns() {
+            const now = new Date();
+            const endDate = new Date();
+            endDate.setHours(23, 59, 59, 999);
+            
+            const diff = endDate - now;
+            if (diff <= 0) {
+                endDate.setDate(endDate.getDate() + 1);
+                return updateAllCountdowns();
+            }
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            const timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            // Actualizar todos los contadores
+            document.getElementById('countdown')?.innerHTML && (document.getElementById('countdown').innerHTML = timeString);
+            document.getElementById('hero-hours')?.innerHTML && (document.getElementById('hero-hours').innerHTML = hours.toString().padStart(2, '0'));
+            document.getElementById('hero-minutes')?.innerHTML && (document.getElementById('hero-minutes').innerHTML = minutes.toString().padStart(2, '0'));
+            document.getElementById('hero-seconds')?.innerHTML && (document.getElementById('hero-seconds').innerHTML = seconds.toString().padStart(2, '0'));
+            document.getElementById('final-hours')?.innerHTML && (document.getElementById('final-hours').innerHTML = hours.toString().padStart(2, '0'));
+            document.getElementById('final-minutes')?.innerHTML && (document.getElementById('final-minutes').innerHTML = minutes.toString().padStart(2, '0'));
+            document.getElementById('final-seconds')?.innerHTML && (document.getElementById('final-seconds').innerHTML = seconds.toString().padStart(2, '0'));
+            
+            // Nuevos contadores de la sección de bonos
+            document.getElementById('bonus-hours')?.innerHTML && (document.getElementById('bonus-hours').innerHTML = hours.toString().padStart(2, '0'));
+            document.getElementById('bonus-minutes')?.innerHTML && (document.getElementById('bonus-minutes').innerHTML = minutes.toString().padStart(2, '0'));
+            document.getElementById('bonus-seconds')?.innerHTML && (document.getElementById('bonus-seconds').innerHTML = seconds.toString().padStart(2, '0'));
+        }
+
+        setInterval(updateAllCountdowns, 1000);
+        updateAllCountdowns();
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Sistema de escasez dinámico
+        let copiesRemaining = 10;
+        function updateScarcity() {
+            // Reducir copias aleatoriamente para crear urgencia
+            if (Math.random() < 0.1 && copiesRemaining > 3) {
+                copiesRemaining--;
+                
+                // Actualizar todos los elementos de escasez
+                document.querySelectorAll('[data-copies]').forEach(el => {
+                    el.textContent = copiesRemaining;
+                });
+                
+                // Mostrar notificación de escasez
+                if (copiesRemaining <= 5) {
+                    showScarcityNotification();
+                }
+            }
+        }
+
+        function showScarcityNotification() {
+            const notification = document.createElement('div');
+            notification.className = 'position-fixed top-0 start-50 translate-middle-x mt-3 alert alert-danger alert-dismissible fade show';
+            notification.style.zIndex = '9999';
+            notification.innerHTML = `
+                <strong>⚠️ ¡URGENCIA!</strong> Solo quedan ${copiesRemaining} copias disponibles!
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+        }
+
+        setInterval(updateScarcity, 30000); // Actualizar cada 30 segundos
+
+        // Efectos de compra en tiempo real
+        function simulatePurchase() {
+            if (Math.random() < 0.05) { // 5% de probabilidad cada vez
+                const names = ['María G.', 'Carlos M.', 'Ana L.', 'Juan R.', 'Sofía P.'];
+                const cities = ['CDMX', 'Monterrey', 'Guadalajara', 'Puebla', 'Querétaro'];
+                const randomName = names[Math.floor(Math.random() * names.length)];
+                const randomCity = cities[Math.floor(Math.random() * cities.length)];
+                
+                showPurchaseNotification(randomName, randomCity);
+            }
+        }
+
+        function showPurchaseNotification(name, city) {
+            const notification = document.createElement('div');
+            notification.className = 'position-fixed bottom-0 end-0 m-3 alert alert-success alert-dismissible fade show';
+            notification.style.zIndex = '9999';
+            notification.innerHTML = `
+                <strong>🎉 ¡Alguien acaba de comprar!</strong><br>
+                <small>${name} de ${city} acaba de adquirir el pack completo</small>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 4000);
+        }
+
+        setInterval(simulatePurchase, 8000); // Simular compra cada 8 segundos
+
+        // Efectos de hover en botones CTA
+        document.querySelectorAll('.funnel-cta').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) scale(1.05)';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Animación de precios al hacer scroll
+        let hasAnimatedPrice = false;
+        window.addEventListener('scroll', function() {
+            const priceSection = document.querySelector('#oferta');
+            if (priceSection && !hasAnimatedPrice) {
+                const rect = priceSection.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    animatePrice();
+                    hasAnimatedPrice = true;
+                }
+            }
+        });
+
+        function animatePrice() {
+            const priceElements = document.querySelectorAll('.value-current');
+            priceElements.forEach(el => {
+                el.style.animation = 'pulse 1s ease-in-out 3';
+            });
+        }
+
+        // Sistema de notificación de salida
+        let exitIntentShown = false;
+        document.addEventListener('mouseleave', function(e) {
+            if (e.clientY <= 0 && !exitIntentShown) {
+                showExitIntentPopup();
+                exitIntentShown = true;
+            }
+        });
+
+        function showExitIntentPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center';
+            popup.style.backgroundColor = 'rgba(0,0,0,0.8)';
+            popup.style.zIndex = '10000';
+            popup.innerHTML = `
+                <div class="bg-white p-5 rounded-4 text-center max-w-500">
+                    <h3 class="fw-bold mb-3">⚠️ ¡ESPERA! NO TE VAYAS AÚN</h3>
+                    <p class="mb-4">¿Seguro que quieres perder esta oferta única?<br>
+                    <strong>Recuerda que los bonos ($2,194 valor) desaparecen para siempre.</strong></p>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <button onclick="this.closest('.position-fixed').remove()" class="btn btn-secondary">No, gracias</button>
+                        <a href="#oferta" onclick="this.closest('.position-fixed').remove()" class="btn btn-success">¡QUIERO LA OFERTA!</a>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(popup);
+        }
+
+        // Inicialización
+        console.log('🚀 Embudo de ventas cargado exitosamente');
+        console.log('📊 Sistema de escasez activado');
+        console.log('⏰ Contadores de urgencia funcionando');
+    </script>
 </body>
 </html>
