@@ -1045,8 +1045,8 @@
                                 <div class="price-section mt-4" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 30px; border-radius: 20px; text-align: center;">
                                     <div style="color: #64748b; font-size: 1.1rem; margin-bottom: 10px;"><span style="text-decoration: line-through;">VALOR TOTAL: $128.00</span></div>
                                     <div style="color: #1e293b; font-size: 1.3rem; font-weight: 600; margin-bottom: 15px;">Precio hoy:</div>
-                                    <div style="font-size: 4rem; font-weight: 900; color: #e94560; line-height: 1;">$7.99</div>
-                                    <div style="color: #10b981; font-weight: 600; font-size: 1.2rem; margin-top: 10px;">Ahorras $120.01 (94% OFF)</div>
+                                    <div style="font-size: 4rem; font-weight: 900; color: #e94560; line-height: 1;">$11.99</div>
+                                    <div style="color: #10b981; font-weight: 600; font-size: 1.2rem; margin-top: 10px;">Ahorras $116.01 (91% OFF)</div>
                                 </div>
                             </div>
                             
@@ -1080,9 +1080,9 @@
                                 </div>
                                 
                                 <!-- CTA Final -->
-                                <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10" style="background: linear-gradient(135deg, #e94560 0%, #ff6b6b 100%); color: white; padding: 20px 30px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2rem; display: block; text-align: center; box-shadow: 0 15px 40px rgba(233, 69, 96, 0.4); transition: all 0.3s ease;" target="_blank">
+                                <a href="https://pay.hotmart.com/K99196229I?checkoutMode=10" style="background: linear-gradient(135deg, #10b981 0%, #34d399 100%); color: white; padding: 20px 30px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2rem; display: block; text-align: center; box-shadow: 0 15px 40px rgba(16, 185, 129, 0.4); transition: all 0.3s ease;" target="_blank">
                                     <i class="fas fa-shopping-cart me-2"></i>
-                                    COMPRAR AHORA - $7.99
+                                    COMPRAR AHORA - $11.99
                                 </a>
                                 
                                 <div class="text-center mt-3" style="color: #64748b; font-size: 0.9rem;">
@@ -1322,33 +1322,7 @@
             });
         }
 
-        // Sistema de notificación de salida
-        let exitIntentShown = false;
-        document.addEventListener('mouseleave', function(e) {
-            if (e.clientY <= 0 && !exitIntentShown) {
-                showExitIntentPopup();
-                exitIntentShown = true;
-            }
-        });
-
-        function showExitIntentPopup() {
-            const popup = document.createElement('div');
-            popup.className = 'position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center';
-            popup.style.backgroundColor = 'rgba(0,0,0,0.8)';
-            popup.style.zIndex = '10000';
-            popup.innerHTML = `
-                <div class="bg-white p-5 rounded-4 text-center max-w-500">
-                    <h3 class="fw-bold mb-3">⚠️ ¡ESPERA! NO TE VAYAS AÚN</h3>
-                    <p class="mb-4">¿Seguro que quieres perder esta oferta única?<br>
-                    <strong>Recuerda que los bonos ($2,194 valor) desaparecen para siempre.</strong></p>
-                    <div class="d-flex gap-3 justify-content-center">
-                        <button onclick="this.closest('.position-fixed').remove()" class="btn btn-secondary">No, gracias</button>
-                        <a href="#oferta" onclick="this.closest('.position-fixed').remove()" class="btn btn-success">¡QUIERO LA OFERTA!</a>
-                    </div>
-                </div>
-            `;
-            document.body.appendChild(popup);
-        }
+        // Sistema de notificación de salida eliminado
 
         // Inicialización
         console.log('🚀 Embudo de ventas cargado exitosamente');
